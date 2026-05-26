@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #2A2C2B;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #384D2F; 
+    border-radius: 10px;      
+    border: 1px solid #E8F0E9;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2A2C2B; 
+}
+
+header {
+    font-family: 'Outfit', sans-serif;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 80%;
+    margin: 20px 10% 0 10%;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E8F0E9;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+header.header-rolado {
+    margin: 0;        
+    width: 100%;    
+    border-radius: 0;    
+    padding: 15px 10%;   
+    background-color: rgba(232, 240, 233, 1); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);  
+}
+
+header.header-rolado .menu-idiomas {
+    top: 40px;
+}
+
+#navMenu {
+    display: none;
+}
+
+.esquerdaHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#imgSmartHeader {
+    width: 50px;
+    height: auto;
+}
+
+header h2 {
+    color: #2A2C2B;
+    font-size: 26px;
+}
+
+.direitaHeader {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navHeader {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navHeader a {
+    color: #2A2C2B;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navHeader a:hover {
+    transform: scale(1.1);
+    color: #384D2F;
+}
+
+.navHeader a:active {
+    transform: scale(1);
+    color: #2A2C2B;
+}
+
+.opcoesHeader {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#traducao, #whatsLogo {
+    height: 35px;
+    background-color: rgba(140, 156, 74, 0.15);
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    min-height: 40px;
+    box-shadow: 0 2px 4px rgba(4,4,4,0.2);
+}
+
+#traducao:hover, #whatsLogo:hover, #navMenu:hover {
+    transition: .3s;
+    transform: translateY(-2px);
+    background-color: rgba(140, 156, 74, 0.25);
+}
+
+#traducao:active {
+    transition: .1s;
+    transform: translateY(0);
+    background-color: rgba(140, 156, 74, 0.35);
+}
+
+
+#traducao {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#traducao .icone-traducao {
+    height: 100%;
+    width: auto;
+}
+
+#setaOPC {
+    height: 12px; 
+    width: auto;
+    transition: transform 0.3s ease; 
+}
+
+#whatsLogo {
+    width: 42px;
+    height: auto;
+}
+
+.menu-idiomas {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    background-color: #E8F0E9; 
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    list-style: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    width: 120px;
+    display: none;
+    z-index: 10;
+}
+
+.menu-idiomas li a {
+    display: block;
+    padding: 10px;
+    color: #2A2C2B;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+    transition: background 0.2s;
+    font-weight: bold;
+}
+
+.menu-idiomas li:first-child a { border-radius: 8px 8px 0 0; }
+.menu-idiomas li:last-child a { border-radius: 0 0 8px 8px; }
+.menu-idiomas li a:hover {
+    text-decoration: none;
+    background-color: #2A2C2B;
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.menu-idiomas.ativo { display: block; }
+#traducao.ativo #setaOPC { transform: rotate(180deg); }
+
+.menuMobile {
+    display: none;
+    position: absolute;
+    top: 105px;
+    right: 10px;           
+    background-color: #E8F0E9; 
+    width: 150px;
+    flex-direction: column;
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    padding: 10px 0;
+    z-index: 999;
+}
+
+.menuMobile.ativo {
+    display: flex;
+}
+
+.menuMobile a {
+    color: #2A2C2B;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.menuMobile a:hover {
+    background-color: rgba(140, 156, 74, 0.2);
+    color: #384D2F;
+}
+
+footer.footer-smart {
+    background-color: #E8F0E9;
+    font-family: 'Outfit', sans-serif; 
+    padding: 120px 10% 60px 10%; 
+    clip-path: ellipse(150% 100% at 50% 100%);
+    margin-top: 400px; 
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    gap: 40px;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-brand {
+    flex: 1 1 250px;
+}
+
+.logo-flex {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-footer-img {
+    width: 70px;
+    height: auto;
+}
+
+.logo-txt h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.logo-txt p {
+    font-size: 11px;
+    border-top: 1px solid #2A2C2B;
+    padding-top: 5px;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.footer-col {
+    flex: 1 1 150px;
+}
+
+.footer-col h3, .footer-actions h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.footer-col ul {
+    list-style: none;
+    text-align: center;
+}
+
+.footer-col ul li a {
+    display: inline-block;
+    color: #2A2C2B;
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #384D2F;
+    transform: scale(1.05);
+}
+
+.footer-actions {
+    flex: 1 1 250px;
+}
+
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-links i {
+    font-size: 28px;
+    color: #2A2C2B;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.social-links i:hover {
+    color: #384D2F;
+    transform: scale(1.1);
+}
+
+.btn-smart {
+    background-color: #D36135;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 8px 8px 20px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    transition: transform 0.2s;
+    margin-top: 25px;
+    width: 100%;
+    max-width: 280px;
+}
+
+.btn-texto {
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+}
+
+.btn-smart:hover { 
+    transform: scale(1.03); 
+}
+
+.btn-arrow-bg {
+    background: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-arrow-icon {
+    width: 18px;
+    height: auto;
+}
+
+
+@media screen and (max-width: 1024px) {
+    header {
+        width: 90%;
+        margin: 20px 5% 0 5%;
+    }
+    header.header-rolado {
+        padding: 15px 5%;
+    }
+    .navHeader{
+        display: none;
+    }
+    .navHeader a {
+        font-size: 18px;
+    }
+    #navMenu {
+        height: 35px;
+        background-color: rgba(140, 156, 74, 0.15);
+        padding: 6px;
+        border-radius: 10px;
+        cursor: pointer;
+        min-height: 40px;
+        min-width: 40px;
+        box-shadow: 0 2px 4px rgba(4,4,4,0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+    #whatsLogo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        width: 94%;
+        margin: 10px 3% 0 3%;
+        padding: 10px 15px;
+    }
+    .navHeader {
+        display: none; 
+    }
+    .direitaHeader {
+        gap: 15px;
+    }
+    footer.footer-smart {
+        padding: 80px 5% 40px 5%;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    .logo-flex {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .social-links {
+        justify-content: center;
+    }
+    .btn-smart {
+        margin: 20px auto 0 auto; 
+    }
+
+    .menuMobile {
+        top: 85px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        width: 98%;
+        margin: 20px 1% 0 1%;
+        padding: 8px 10px;
+    }
+    #imgSmartHeader{
+        width: 40px;
+    }
+    header h2{
+        font-size: 20px;
+    }
+}
