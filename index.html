@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Bugs</title>
+    <link rel="icon" href="img/header/smartSemNome.png">
+    <title>Smart Bugs - Inicio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/background.css">
 </head>
 <body>
+    <div class="decoracoes-fundo">
+        <div class="padrao-malha"></div>
+        <div class="bolha-laranja"></div>
+        <div class="bolha-verde"></div>
+    </div>
     <header>
         <section class="esquerdaHeader">
             <img src="img/header/smartSemNome.png" alt="" id="imgSmartHeader">
-            <h2 id="headerTitulo">SMART BUGS</h2>
+            <h2 id="headerTitulo"><label style="color: #F32A10;">SMART</label> BUGS</h2>
         </section>
         <section class="direitaHeader">
             <nav class="navHeader">
-                <a id="navInicio" href="">Início</a>
-                <a id="navLocalizacao" href="">Localização</a>
-                <a id="navImpacto" href="">Impacto</a>
-                <a id="navProdutos" href="">Produtos</a>
-                <a id="navSobreNos" href="">Sobre nós</a>
+                <a id="navInicio" href="" data-i18n="navInicio">Início</a>
+                <a id="navLocalizacao" href="html/localizacao.html" data-i18n="navLocalizacao">Localização</a>
+                <a id="navImpacto" href="" data-i18n="navImpacto">Impacto</a>
+                <a id="navProdutos" href="html/produtos-SM2.html" data-i18n="navProdutos">Produtos</a>
+                <a id="navSobreNos" href="html/sobreNos.html" data-i18n="navSobreNos">Sobre nós</a>
             </nav>
             <section class="opcoesHeader">
                 <div id="traducao" class="dropdown-container">
@@ -33,34 +44,184 @@
                         <li><a href="?lang=es">Esp</a></li>
                     </ul>
                 </div>
-                <img src="img/header/whatslogo.png" alt="" id="whatsLogo">
+                <a href="https://wa.me/5545999116499?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." id="whatsLogo" target="_blank">
+                    <i class="fi fi-brands-whatsapp"></i>
+                </a>
                 <i class="fi fi-br-menu-burger" id="navMenu"></i>
                 <section class="menuMobile">
-                    <a id="navInicioMobile" href="">Início</a>
-                    <a id="navLocalizacaoMobile" href="">Localização</a>
-                    <a id="navImpactoMobile" href="">Impacto</a>
-                    <a id="navProdutosMobile" href="">Produtos</a>
-                    <a id="navSobreNosMobile" href="">Sobre nós</a>
+                    <a id="navInicioMobile" href="" data-i18n="navInicio">Início</a>
+                    <a id="navLocalizacaoMobile" href="html/localizacao.html" data-i18n="navLocalizacao">Localização</a>
+                    <a id="navImpactoMobile" href="" data-i18n="navImpacto">Impacto</a>
+                    <a id="navProdutosMobile" href="html/produtos-SM2.html" data-i18n="navProdutos">Produtos</a>
+                    <a id="navSobreNosMobile" href="html/sobreNos.html" data-i18n="navSobreNos">Sobre nós</a>
                 </section>
             </section>
         </section>
     </header>
 
+    <main>
+    <section class="video-hero">
+        <video autoplay loop muted id="videoFundo">
+            <source src="img/index/background.mp4" type="video/mp4">
+        </video>
+        <div class="textoVideo">
+            <h1 data-i18n="heroTitulo">Inovação e tecnologia para o sucesso das suas criações</h1>
+            <p data-i18n="heroDesc">Trabalhamos juntos para buscar a inovação das suas criações através de soluções tecnológicas inteligentes, transformando desafios complexos de reprodução em processos simples, sustentáveis e altamente produtivos.</p>
+        </div>
+    </section>
+
+    <section class="beneficios">
+        <div class="beneficios-container">
+            <h2 data-i18n="benTitulo">Benefícios</h2>
+            <h3 data-i18n="benSub">Soluções práticas desenhadas para elevar a eficiência e o rendimento do seu cultivo.</h3>
+            
+            <div class="beneficio-item">
+                <div class="beneficio-img-container">
+                    <img src="img/index/beneficios/beneficio1.png" alt="Sustentabilidade" class="beneficio-img">
+                    <h4 data-i18n="ben1Tit">Sustentabilidade de Alta Performance</h4>
+                </div>
+                <div class="beneficio-texto">
+                    <img src="img/index/linhaDeco.png" alt="Linha Decorativa" class="decoracao-img">
+                    <p data-i18n="ben1Desc">Otimize o cultivo de insetos com processos focados na economia circular, reduzindo o desperdício de recursos biológicos. Implemente tecnologia de ponta que não apenas produz, mas contribui ativamente para um ecossistema produtivo mais limpo e equilibrado.</p>
+                </div>
+            </div>
+
+            <div class="beneficio-item">
+                <div class="beneficio-img-container">
+                    <img src="img/index/beneficios/beneficio2.png" alt="Escalabilidade" class="beneficio-img">
+                    <h4 data-i18n="ben2Tit">Escalabilidade para Bio-fábricas</h4>
+                </div>
+                <div class="beneficio-texto">
+                    <img src="img/index/linhaDeco.png" alt="Linha Decorativa" class="decoracao-img transform">
+                    <p id="widthMenor" data-i18n="ben2Desc">Nossas ferramentas possuem design modular para crescer conforme sua demanda aumenta. Com interfaces intuitivas, facilitamos o manejo das larvas e aceleramos o retorno sobre o investimento da sua unidade de produção.</p>
+                </div>
+            </div>
+
+            <div class="beneficio-item">
+                <div class="beneficio-img-container">
+                    <img src="img/index/beneficios/beneficio3.png" alt="Aceleração" class="beneficio-img">
+                    <h4 data-i18n="ben3Tit">Aceleração do Ciclo Produtivo</h4>
+                </div>
+                <div class="beneficio-texto">
+                    <img src="img/index/linhaDeco.png" alt="Linha Decorativa" class="decoracao-img linhaDecoAcel">
+                    <p id="transformMenor" data-i18n="ben3Desc">Nossas ferramentas são projetadas para otimizar o tempo de manejo e acelerar o desenvolvimento das larvas em cada fase. Através de um design funcional, eliminamos gargalos operacionais e permitimos que sua produção atinja o ponto de colheita com muito mais rapidez e eficiência.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-imagem">
+            <img src="img/index/smart.png" alt="Imagem de destaque Smart Bugs" class="imagem-sticky">
+        </div>
+    </section>
+
+    <section class="impacto-container">
+        <div class="esquerda-impacto">
+            <img src="img/index/impacto/Ellipse 10.png" alt="Impacto" class="elipse-img">
+            <img src="img/index/impacto/divisorLat.png" alt="divisor" class="divisor-impacto">
+            <img src="img/index/impacto/world.png" alt="Impacto" class="wolrd-img">
+        </div>
+        <div class="direita-impacto">
+            <h2 data-i18n="impTit">Tecnologia que gera transformação real</h2>
+            <p id="subTitulo-impacto" data-i18n="impSub">Nossas soluções para a criação de insetos otimizam o uso de recursos físicos, acelerando o ciclo de vida das larvas com maior eficiência produtiva do que os métodos convencionais.</p>
+            <p class="impacto-texto transformIPC" data-i18n="imp1">Eficiência de Manejo: Reduzimos significativamente o tempo operacional em cada fase do ciclo produtivo</p>
+            <p class="impacto-texto" data-i18n="imp2">Otimização de Recursos: Minimizamos o desperdício de insumos orgânicos e maximizamos a produtividade</p>
+            <p class="impacto-texto transformIPC" data-i18n="imp3">Escalabilidade e Futuro: Ajudamos produtores a expandir suas bio-fábricas com equipamentos modulares que atendem à demanda.</p>
+                <a href="#" class="btn-smart impactoBTN">
+                    <span class="btn-texto" data-i18n="btnImpacto">Veja nosso impacto</span>
+                    <div class="btn-arrow-bg"><img src="img/geral/flechaBtn.png" class="btn-arrow-icon"></div>
+                </a>
+        </div>
+        
+    </section>
+
+    <section class="pratica-container">
+        <section class="header-pratica">
+            <h2 data-i18n="praTit">Do Impacto à Prática</h2>
+            <h4 data-i18n="praSub">Nossos produtos são focados na eficiência de reprodução de insetos, como larvas</h4>
+            <a href="html/produtos-SM2.html" class="btn-smart catalogoBTN">
+                <span class="btn-texto" data-i18n="btnCatalogo">Catálogo de Produtos</span>
+                <div class="btn-arrow-bg"><img src="img/geral/flechaBtn.png" class="btn-arrow-icon"></div>
+            </a>
+        </section>
+        <section class="card-pratica">
+            <div class="card-produto">
+                <div class="card-img-container">
+                    <img src="img/index/cards/imgProduto.png" alt="Produto caixa reprodutor" class="card-img">
+                </div>
+                
+                <div class="card-decoracao">
+                    <img src="img/index/cards/linhaCard.png" alt="Separador Decorativo" class="separador-img">
+                </div>
+                
+                <div class="card-info">
+                    <h3 class="card-titulo" data-i18n="card1Tit">Caixa Reprodutor</h3>
+                    <p class="card-texto" data-i18n="card1Desc">Primeira caixa autoempilhável da América Latina</p>
+                    
+                    <div class="card-btn-container">
+                        <a href="html/produtos-SM2.html" class="btn-card">
+                            <span class="btn-card-texto" data-i18n="btnSaibaMais">Saiba Mais</span>
+                            <div class="btn-card-icon-bg">
+                                <i class="fi fi-br-arrow-up-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-produto card-em-breve">
+                <h3 data-i18n="emBreve">Em Breve...</h3>
+            </div>
+            <div class="card-produto card-em-breve">
+                <h3 data-i18n="emBreve">Em Breve...</h3>
+            </div>
+        </section>
+    </section>
+
+    <section class="interessou-container">
+        <div class="header-interessou">
+            <h2 data-i18n="intTit">Se interessou?</h2>
+            <p id="subTitulo-impacto" data-i18n="intSub">Somos desenvolvedores e entusiastas da sustentabilidade focados em otimizar cada fase do ciclo das larvas.</p>
+        </div>
+        <div class="conteudo-interessou">
+            <div class="esquerda-interessou">
+                <div class="img-interessou-container">
+                    <img src="img/index/interessou/divisorLat.png" alt="divisor" class="divisor-impacto">
+                    <img src="img/index/interessou/imgCentral.png" alt="Impacto" class="central-img">
+                </div>
+                <div class="btns-interessou">
+                    <a href="#" class="btn-smart impactoBTN">
+                        <span class="btn-texto" data-i18n="btnHistoria">Nossa história</span>
+                        <div class="btn-arrow-bg"><img src="img/geral/flechaBtn.png" class="btn-arrow-icon"></div>
+                    </a>
+                    <a href="#" class="btn-smart-void impactoBTN">
+                        <span class="btn-texto" data-i18n="btnChegar">Como chegar</span>
+                        <div class="btn-arrow-bg"><img src="img/geral/flechaBtn.png" class="btn-arrow-icon"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="direita-interessou">
+                <p data-i18n="intP1">A Smart Bugs nasceu da vontade de transformar o cenário da biotecnologia através de soluções inteligentes e acessíveis. Combinamos tecnologia e biologia para entregar ferramentas que realmente fazem a diferença na produção de proteínas sustentáveis.</p>
+                <p data-i18n="intP2">Nosso compromisso é com a inovação, a sustentabilidade e o sucesso dos nossos clientes. Estamos aqui para ajudar você a alcançar resultados extraordinários, otimizando cada etapa do ciclo produtivo de larvas com eficiência e responsabilidade ambiental.</p>
+                <p data-i18n="intP3">Junte-se a nós nessa jornada de transformação e descubra como a Smart Bugs pode impulsionar o futuro da biotecnologia, tornando o processo de criação de insetos mais inteligente, eficiente e sustentável.</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
     <footer class="footer-smart">
         <div class="footer-container">
-            
             <section class="footer-brand">
                 <div class="logo-flex">
                     <img src="img/header/smartSemNome.png" alt="Logo" class="logo-footer-img">
                     <div class="logo-txt">
-                        <h1>SMART BUGS</h1>
-                        <p>Tecnologia que impulsiona a biotecnologia</p>
+                        <h1><label style="color: #F32A10;">SMART</label> BUGS</h1>
+                        <p data-i18n="footSub">Tecnologia que impulsiona a biotecnologia</p>
                     </div>
                 </div>
             </section>
 
             <nav class="footer-col">
-                <h3>Produtos</h3>
+                <h3 data-i18n="footProd">Produtos</h3>
                 <ul>
                     <li><a href="#">Produto 1</a></li>
                     <li><a href="#">Produto 2</a></li>
@@ -70,7 +231,7 @@
             </nav>
 
             <nav class="footer-col">
-                <h3>Mais Smart</h3>
+                <h3 data-i18n="footMais">Mais Smart</h3>
                 <ul>
                     <li><a href="#">Sobre 1</a></li>
                     <li><a href="#">Sobre 2</a></li>
@@ -80,23 +241,34 @@
             </nav>
 
             <section class="footer-actions">
-                <h3>Contatos</h3>
+                <h3 data-i18n="footCont">Contatos</h3>
                 <div class="social-links">
-                    <i class="fi fi-brands-instagram" id="insta"></i>
-                    <i class="fi fi-brands-facebook"></i>
-                    <i class="fi fi-brands-linkedin-circle"></i>
-                    <i class="fi fi-brands-whatsapp"></i>
+                    <a href="https://www.instagram.com/smartbugs_oficial/" target="_blank">
+                        <i class="fi fi-brands-instagram" id="insta"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/seu-perfil" target="_blank">
+                        <i class="fi fi-brands-facebook"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">
+                        <i class="fi fi-brands-linkedin-circle"></i>
+                    </a>
+
+                    <a href="https://wa.me/seu-numero" target="_blank">
+                        <i class="fi fi-brands-whatsapp"></i>
+                    </a>
                 </div>
                 
-                <a href="#" class="btn-smart">
-                    <span class="btn-texto">Faça parte da nossa equipe</span>
+                <a href="#" class="btn-smart footerBTN">
+                    <span class="btn-texto" data-i18n="btnEquipe">Faça parte da nossa equipe</span>
                     <div class="btn-arrow-bg"><img src="img/geral/flechaBtn.png" class="btn-arrow-icon"></div>
                 </a>
             </section>
-
         </div>
     </footer>
 
 <script src="js/index.js"></script>
+<script src="js/inicio.js"></script>
 </body>
 </html>

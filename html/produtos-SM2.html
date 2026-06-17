@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Bugs - Nossos Produtos</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/produtos-SM2.css">
+    <link rel="stylesheet" href="../css/background.css">
+</head>
+<body>
+    <div class="decoracoes-fundo">
+        <div class="padrao-malha"></div>
+        <div class="bolha-laranja"></div>
+        <div class="bolha-verde"></div>
+    </div>
+    <header>
+        <section class="esquerdaHeader">
+            <img src="../img/header/smartSemNome.png" alt="" id="imgSmartHeader">
+            <h2 id="headerTitulo"><label style="color: #F32A10;">SMART</label> BUGS</h2>
+        </section>
+        <section class="direitaHeader">
+            <nav class="navHeader">
+                <a id="navInicio" href="../index.html" data-i18n="navInicio">Início</a>
+                <a id="navLocalizacao" href="localizacao.html" data-i18n="navLocalizacao">Localização</a>
+                <a id="navImpacto" href="" data-i18n="navImpacto">Impacto</a>
+                <a id="navProdutos" href="produtos-SM2.html" data-i18n="navProdutos">Produtos</a>
+                <a id="navSobreNos" href="sobreNos.html" data-i18n="navSobreNos">Sobre nós</a>
+            </nav>
+            <section class="opcoesHeader">
+                <div id="traducao" class="dropdown-container">
+                    <img src="../img/header/traducao.png" alt="" class="icone-traducao">
+                    <img src="../img/header/setaOPC.png" alt="" id="setaOPC">
+                    
+                    <ul class="menu-idiomas">
+                        <li><a href="?lang=pt">PT-BR</a></li>
+                        <li><a href="?lang=en">Eng</a></li>
+                        <li><a href="?lang=es">Esp</a></li>
+                    </ul>
+                </div>
+               <a href="https://wa.me/5545999116499?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." id="whatsLogo" target="_blank">
+                    <i class="fi fi-brands-whatsapp"></i>
+                </a>
+                <i class="fi fi-br-menu-burger" id="navMenu"></i>
+                <section class="menuMobile">
+                    <a id="navInicioMobile" href="../index.html" data-i18n="navInicio">Início</a>
+                    <a id="navLocalizacaoMobile" href="localizacao.html" data-i18n="navLocalizacao">Localização</a>
+                    <a id="navImpactoMobile" href="" data-i18n="navImpacto">Impacto</a>
+                    <a id="navProdutosMobile" href="produtos-SM2.html" data-i18n="navProdutos">Produtos</a>
+                    <a id="navSobreNosMobile" href="html/sobreNos.html" data-i18n="navSobreNos">Sobre nós</a>
+                </section>
+            </section>
+        </section>
+    </header>
+
+    <section class="video-hero">
+        <video autoplay loop muted id="videoFundo">
+            <source src="../img/index/background.mp4" type="video/mp4">
+        </video>
+        <div class="textoVideo">
+            <p data-i18n="heroTitulo">Início > Produtos</p>
+            <h1 data-i18n="heroDesc">Descubra o nosso portifólio e otimize a sua produção</h1>
+        </div>
+    </section>
+
+    <div class="page-header">
+        <h1 class="page-title">
+            Nossos produtos
+        </h1>
+    </div>
+    
+    <div class="main-content">
+        
+        <aside class="filter-wrapper">
+            <div class="filter-box">
+                <div class="filter-header">
+                    <h2 class="filter-title">Filtro</h2>
+                    <div class="filter-line"></div>
+                </div>
+                <div class="filter-list">
+                    <label class="filter-item">
+                        <input type="checkbox" id="filter-todos" checked value="todos">
+                        <span>Todos os itens</span>
+                    </label>
+                    <label class="filter-item">
+                        <input type="checkbox" class="filter-cb" value="caixas">
+                        <span>Caixas Criadoras</span>
+                    </label>
+                    <label class="filter-item">
+                        <input type="checkbox" class="filter-cb" value="larvas">
+                        <span>Larvas</span>
+                    </label>
+                    <label class="filter-item">
+                        <input type="checkbox" class="filter-cb" value="ovos">
+                        <span>Ovos</span>
+                    </label>
+                </div>
+            </div>
+        </aside>
+
+        <main class="products-area">
+            <div class="products-grid">
+                
+                <article class="product-card" data-category="caixas">
+                    <img src="../img/caixa.png" alt="Produto" class="product-img">
+                    <span class="badge-category">Equipamento</span>
+                    <h3 class="product-name">Caixa Empilhável</h3>
+                    <p class="product-desc">Auxilia na reprodução de larvas, com eficiência e de fácil manejo.</p>
+                    <div class="product-actions">
+                        <button class="btn-more" onclick="openModal()">
+                            <span class="text">Saiba Mais</span>
+                            <span class="icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card2 card-em-breve" data-category="larvas">
+                    <h3 data-i18n="emBreve">Em Breve...</h3>
+                </article>
+
+                <article class="product-card2 card-em-breve" data-category="ovos">
+                    <h3 data-i18n="emBreve">Em Breve...</h3>
+                </article>
+
+            </div>
+        </main>
+    </div>
+
+    <section class="diferenciais-section">
+        <h2 class="diferenciais-titulo">Por que escolher a Smart Bugs?</h2>
+        <div class="diferenciais-grid">
+            <div class="diferencial-card">
+                <i class="fi fi-br-leaf diferencial-icon"></i>
+                <h3>Sustentabilidade</h3>
+                <p>Nossos processos são 100% voltados para a economia circular, reduzindo drasticamente o impacto ambiental.</p>
+            </div>
+            <div class="diferencial-card">
+                <i class="fi fi-br-shield-check diferencial-icon"></i>
+                <h3>Qualidade Garantida</h3>
+                <p>Equipamentos testados e larvas criadas sob os mais rigorosos padrões de biossegurança do mercado.</p>
+            </div>
+            <div class="diferencial-card">
+                <i class="fi fi-br-rocket-lunch diferencial-icon"></i>
+                <h3>Alta Produtividade</h3>
+                <p>Caixas e sistemas projetados especificamente para maximizar o rendimento da sua criação de forma inteligente.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2 class="faq-titulo">Perguntas Frequentes</h2>
+            <div class="faq-lista">
+                <details class="faq-item">
+                    <summary>Vocês entregam para todo o Brasil?</summary>
+                    <p>Sim! Contamos com uma rede de logística preparada para enviar nossos equipamentos e kits iniciais para qualquer região do país com total segurança e agilidade.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>As caixas criadoras servem para quais insetos?</summary>
+                    <p>Nossas caixas foram desenvolvidas com foco no Tenebrio Molitor e na Mosca Soldado Negra (BSF), mas o design com vão livre e ventilação otimizada permite adaptação para diversas outras espécies.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Vocês oferecem suporte para quem está começando?</summary>
+                    <p>Com certeza. Temos materiais de apoio e uma equipe técnica ponta de lança pronta para tirar suas dúvidas durante a implementação do seu projeto biotecnológico.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>De qual material são feitas as caixas criadoras?</summary>
+                    <p>Nossas caixas são produzidas em Polipropileno (PP) Virgem, com aditivos isentos de Bisfenol (BPA Free). Isso garante alta durabilidade, resistência (suportando até 25kg por peça) e total segurança, evitando contaminações na sua colônia.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Tenho pouco espaço físico. O sistema de vocês funciona para mim?</summary>
+                    <p>Perfeitamente! Nosso equipamento foi projetado para ser totalmente empilhável. Isso permite que você expanda sua produção de forma vertical, otimizando cada metro quadrado da sua instalação sem prejudicar a ventilação.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Como é feita a higienização dos equipamentos?</summary>
+                    <p>O design interno das caixas foi pensado para evitar o acúmulo de resíduos nos cantos, facilitando o manejo. Elas podem ser lavadas facilmente com água e detergente neutro, ou desinfetadas com soluções padrão de biossegurança sem danificar o plástico.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Como posso solicitar um orçamento para compras em atacado?</summary>
+                    <p>Para estruturar uma fazenda de insetos do zero ou comprar em grande volume, basta entrar em contato conosco pelo botão do WhatsApp ou por nossas redes sociais no rodapé. Nossa equipe montará uma proposta personalizada para a sua necessidade!</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <div id="productModal" class="modal-overlay" onclick="closeModalOutside(event)">
+        <div class="modal-content">
+            
+            <div class="modal-header-row">
+                <span class="badge-category" style="margin-bottom: 0;">Caixas</span>
+                <h2 class="modal-title">Caixas Criadoras</h2>
+                <div class="modal-divider">
+                    <svg viewBox="0 0 200 20" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M 10 10 Q 30 10 50 10 C 60 10 65 2 70 10 C 75 18 80 10 90 10 C 100 10 105 2 110 10 C 115 18 120 10 130 10 C 140 10 145 2 150 10 C 155 18 160 10 170 10 Q 180 10 190 10" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <div>
+                    <img src="../img/caixa.png" alt="Caixa Criadora" class="modal-img">
+                    <ul class="modal-specs">
+                        <li>. Material: Polipropileno PP Virgem com aditivos isentos de Bisfenol.</li>
+                        <li>. Dimensão Externa (C x L x A): 60 x 40 x 19 cm.</li>
+                        <li>. Capacidade Volumétrica Interna: 28 Litros.</li>
+                        <li>. Capacidade de Carga por peça: 25 kg.</li>
+                        <li>. Vão Livre Interno: 7 cm (essencial para ventilação e manejo).</li>
+                        <li>. Cor: Azul (em outras cores, ver possibilidade de encomenda).</li>
+                    </ul>
+                </div>
+
+                <div style="display: flex; flex-direction: column;">
+                    <p class="modal-desc">
+                        Nossa caixa é projetada para otimizar o espaço, garantir a ventilação e atender às boas práticas de criação.
+                    </p>
+                    
+                    <div class="modal-badges-grid">
+                        <div class="modal-badge-gray">
+                            <span>Altura</span>
+                            <span>interna</span>
+                            <span>12cm</span>
+                        </div>
+                        <div class="modal-badge-gray">
+                            <span>Cubagem</span>
+                            <span>0,048 m³</span>
+                        </div>
+                        <div class="modal-badge-gray">
+                            <span>Peso</span>
+                            <span>1,100kg</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-close-modal" style="margin-top: auto;" onclick="closeModal()">
+                        <span class="text">Fechar</span>
+                        <span class="icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer-smart">
+        <div class="footer-container">
+            <section class="footer-brand">
+                <div class="logo-flex">
+                    <img src="../img/header/smartSemNome.png" alt="Logo" class="logo-footer-img">
+                    <div class="logo-txt">
+                        <h1>SMART BUGS</h1>
+                        <p>Tecnologia que impulsiona a biotecnologia</p>
+                    </div>
+                </div>
+            </section>
+
+            <nav class="footer-col">
+                <h3>Produtos</h3>
+                <ul>
+                    <li><a href="#">Produto 1</a></li>
+                    <li><a href="#">Produto 2</a></li>
+                    <li><a href="#">Produto 3</a></li>
+                    <li><a href="#">Produto 4</a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer-col">
+                <h3>Mais Smart</h3>
+                <ul>
+                    <li><a href="#">Sobre 1</a></li>
+                    <li><a href="#">Sobre 2</a></li>
+                    <li><a href="#">Sobre 3</a></li>
+                    <li><a href="#">Sobre 4</a></li>
+                </ul>
+            </nav>
+
+            <section class="footer-actions">
+                <h3>Contatos</h3>
+                <div class="social-links">
+                    <i class="fi fi-brands-instagram" id="insta"></i>
+                    <i class="fi fi-brands-facebook"></i>
+                    <i class="fi fi-brands-linkedin-circle"></i>
+                    <i class="fi fi-brands-whatsapp"></i>
+                </div>
+                
+                <a href="#" class="btn-smart">
+                    <span class="btn-texto">Faça parte da nossa equipe</span>
+                    <div class="btn-arrow-bg"><img src="../img/geral/flechaBtn.png" class="btn-arrow-icon"></div>
+                </a>
+            </section>
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/filtros.js"></script>
+
+    <script>
+        const modal = document.getElementById('productModal');
+
+        function openModal() {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function closeModalOutside(event) {
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>

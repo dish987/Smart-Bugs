@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Bugs - Localização</title>
+    <link rel="stylesheet" href="../css/localizacao.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <section class="esquerdaHeader">
+            <img src="../img/header/smartSemNome.png" alt="" id="imgSmartHeader">
+            <h2 id="headerTitulo"><label style="color: #F32A10;">SMART</label> BUGS</h2>
+        </section>
+        <section class="direitaHeader">
+            <nav class="navHeader">
+                <a id="navInicio" href="../index.html" data-i18n="navInicio">Início</a>
+                <a id="navLocalizacao" href="localizacao.html" data-i18n="navLocalizacao">Localização</a>
+                <a id="navImpacto" href="" data-i18n="navImpacto">Impacto</a>
+                <a id="navProdutos" href="produtos-SM2.html" data-i18n="navProdutos">Produtos</a>
+                <a id="navSobreNos" href="sobreNos.html" data-i18n="navSobreNos">Sobre nós</a>
+            </nav>
+            <section class="opcoesHeader">
+                <div id="traducao" class="dropdown-container">
+                    <img src="../img/header/traducao.png" alt="" class="icone-traducao">
+                    <img src="../img/header/setaOPC.png" alt="" id="setaOPC">
+                    
+                    <ul class="menu-idiomas">
+                        <li><a href="?lang=pt">PT-BR</a></li>
+                        <li><a href="?lang=en">Eng</a></li>
+                        <li><a href="?lang=es">Esp</a></li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/5545999116499?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." id="whatsLogo" target="_blank">
+                    <i class="fi fi-brands-whatsapp"></i>
+                </a>
+                <i class="fi fi-br-menu-burger" id="navMenu"></i>
+                <section class="menuMobile">
+                    <a id="navInicioMobile" href="../index.html" data-i18n="navInicio">Início</a>
+                    <a id="navLocalizacaoMobile" href="localizacao.html" data-i18n="navLocalizacao">Localização</a>
+                    <a id="navImpactoMobile" href="" data-i18n="navImpacto">Impacto</a>
+                    <a id="navProdutosMobile" href="produtos-SM2.html" data-i18n="navProdutos">Produtos</a>
+                    <a id="navSobreNosMobile" href="sobreNos.html" data-i18n="navSobreNos">Sobre nós</a>
+                </section>
+            </section>
+        </section>
+    </header>
+
+     <section class="video-hero">
+        <video autoplay loop muted id="videoFundo">
+            <source src="../img/localizacao/background.mp4" type="video/mp4">
+        </video>
+        <div class="textoVideo">
+            <p data-i18n="heroTitulo">Início > Localização</p>
+            <h1 data-i18n="heroDesc">Descubra a nossa localização e melhore sua produtividade</h1>
+        </div>
+    </section>
+    
+
+    <section class="container galpao-grid">
+        <div class="titulo-secao-moderno">
+           <h2>Nossa instalação</h2>
+       </div>
+        <div class="galpao-fotos">
+            <img src="../img/localizacao/Foto-Galpao-1.png" class="foto-grid" alt="Galpão 1">
+            <img src="../img/localizacao/Foto-Galpao2.png" class="foto-grid" alt="Galpão 2">
+        </div>
+    </section>
+
+    <section class="mapa-section">
+        <div class="titulo-secao-moderno">
+            <h2>Como chegar</h2>
+        </div>
+
+        <div class="mapa-container-estiloso">
+            <div class="map-wrapper">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3627.180669325126!2d-53.7124479!3d-24.6174572!3m2!1i1024!2i768!4f13.1!2m1!1sbiopark%20localizacao!5e0!3m2!1spt-BR!2sbr!4v1781667666857!5m2!1spt-BR!2sbr" 
+                    style="border:0; width: 100%; height: 100%;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                
+                <div class="map-overlay">
+                    <span class="map-text">Estamos localizados em Toledo - PR</span>
+                    <a href="https://www.google.com/maps/place/Biopark+Educa%C3%A7%C3%A3o/@-24.6174572,-53.7124479,17z" target="_blank" class="map-btn">
+                        Abrir no Google Maps <i class="fa-solid fa-location-dot"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="titulo-secao-moderno">
+        <h2>Contatos</h2>
+    </div>
+
+    <section class="contato-info-wrapper">
+        <div class="fale-conosco">
+            <h1>Fale Conosco</h1>
+            <p>Escolha o canal mais conveniente para você. Nossa equipe de suporte está pronta para ajudar.</p>
+        </div>
+        
+        <div class="contato-card-container">
+            <!-- Grid de Links de Ação -->
+            <div class="contato-links-grid">
+                <a href="https://wa.me/5545999116499" target="_blank" class="card-contato-item">
+                    <div class="icon-box"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div class="text-box">
+                        <span class="label-contato">WhatsApp</span>
+                        <span class="dado-contato">(45) 99911-6499</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square arrow-hint"></i>
+                </a>
+
+                <a href="https://www.instagram.com/smartbugs_oficial" target="_blank" class="card-contato-item">
+                    <div class="icon-box"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="text-box">
+                        <span class="label-contato">Instagram</span>
+                        <span class="dado-contato">@smartbugs_oficial</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square arrow-hint"></i>
+                </a>
+
+                <a href="mailto:Smartbugs@hotmail.com.br" class="card-contato-item">
+                    <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text-box">
+                        <span class="label-contato">E-mail</span>
+                        <span class="dado-contato gmail">Smartbugs@hotmail.com.br</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square arrow-hint"></i>
+                </a>
+            </div>
+
+            <!-- Bloco do Avatar Integrado -->
+            <div class="avatar-box">
+                <img src="../img/localizacao/Avatar.png" alt="Avatar Atendimento" class="avatar-img">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="atendimento">
+    <!-- Usa o título moderno que criamos no passo anterior -->
+    <div class="titulo-secao-moderno">
+        <h2>Área de Atendimento</h2>
+    </div>
+
+    <div class="atendimento-grid">
+        <!-- Card 1: Horário -->
+        <div class="atendimento-card">
+            <div class="atendimento-icon">
+                <i class="fa-regular fa-clock"></i>
+            </div>
+            <div class="atendimento-content">
+                <h3>Horário de Funcionamento</h3>
+                <p>Atendemos de Segunda a Sexta-feira, das <strong>08h às 17h</strong>.</p>
+            </div>
+        </div>
+
+        <!-- Card 2: Envio/Logística -->
+        <div class="atendimento-card">
+            <div class="atendimento-icon">
+                <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <div class="atendimento-content">
+                <h3>Logística e Envios</h3>
+                <p>Contratamos transportadoras para grandes unidades ou Correios para pedidos menores. Você também pode retirar diretamente conosco.</p>
+            </div>
+        </div>
+
+        <!-- Card 3: Pedidos/Instagram -->
+        <div class="atendimento-card">
+            <div class="atendimento-icon">
+                <i class="fa-solid fa-link"></i>
+            </div>
+            <div class="atendimento-content">
+                <h3>Faça seu Pedido</h3>
+                <p>Venha fazer seu pedido e conferir nosso Instagram.</p>
+                <a href="#" target="_blank" class="atendimento-link">Acessar Link.tree <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Card 4: WhatsApp -->
+        <div class="atendimento-card destaque-whats">
+            <div class="atendimento-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="atendimento-content">
+                <h3>Ficou com Dúvidas?</h3>
+                <p>Nossa equipe está à disposição para te ajudar rapidamente.</p>
+                <a href="#" target="_blank" class="atendimento-link link-whats">Chamar no WhatsApp <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="entrega-clientes">
+        <div class="container-nosso-trabalho">
+            <div class="titulo-secao-moderno">
+            <h2>Nosso trabalho</h2>
+        </div>
+            
+            <div class="trabalho-grid">
+                <img src="../img/localizacao/equipe1.png" class="foto-trabalho" alt="Equipe 1">
+                <img src="../img/localizacao/equipe2.png" class="foto-trabalho" alt="Equipe 2">
+                <img src="../img/localizacao/caminhao.png" class="foto-trabalho destaque-caminhao" alt="Caminhão">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-smart">
+        <div class="footer-container">
+            <section class="footer-brand">
+                <div class="logo-flex">
+                    <img src="../img/header/smartSemNome.png" alt="Logo" class="logo-footer-img">
+                    <div class="logo-txt">
+                        <h1><label style="color: #F32A10;">SMART</label> BUGS</h1>
+                        <p data-i18n="footSub">Tecnologia que impulsiona a biotecnologia</p>
+                    </div>
+                </div>
+            </section>
+
+            <nav class="footer-col">
+                <h3 data-i18n="footProd">Produtos</h3>
+                <ul>
+                    <li><a href="#">Produto 1</a></li>
+                    <li><a href="#">Produto 2</a></li>
+                    <li><a href="#">Produto 3</a></li>
+                    <li><a href="#">Produto 4</a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer-col">
+                <h3 data-i18n="footMais">Mais Smart</h3>
+                <ul>
+                    <li><a href="#">Sobre 1</a></li>
+                    <li><a href="#">Sobre 2</a></li>
+                    <li><a href="#">Sobre 3</a></li>
+                    <li><a href="#">Sobre 4</a></li>
+                </ul>
+            </nav>
+
+            <section class="footer-actions">
+                <h3 data-i18n="footCont">Contatos</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/smartbugs_oficial/" target="_blank">
+                        <i class="fi fi-brands-instagram" id="insta"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/seu-perfil" target="_blank">
+                        <i class="fi fi-brands-facebook"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">
+                        <i class="fi fi-brands-linkedin-circle"></i>
+                    </a>
+
+                    <a href="https://wa.me/seu-numero" target="_blank">
+                        <i class="fi fi-brands-whatsapp"></i>
+                    </a>
+                </div>
+                
+                <a href="#" class="btn-smart footerBTN">
+                    <span class="btn-texto" data-i18n="btnEquipe">Faça parte da nossa equipe</span>
+                    <div class="btn-arrow-bg"><img src="../img/geral/flechaBtn.png" class="btn-arrow-icon"></div>
+                </a>
+            </section>
+        </div>
+    </footer>
+
+<script src="../js/index.js"></script>
+</body>
+</html>
