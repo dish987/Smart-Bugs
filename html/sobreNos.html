@@ -10,10 +10,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="icon" href="../img/header/smartSemNome.png">
     <title data-i18n="sobreNosTituloAba">Smart Bugs - Sobre nós</title>
 </head>
 <body>
+    <a href="https://wa.me/5545999116499?text=Olá, gostaria de mais informações." 
+        class="whatsapp-flutuante" 
+        target="_blank" 
+        aria-label="Fale conosco pelo WhatsApp">
+        <i class="fi fi-brands-whatsapp colorWhats"></i>
+    </a>
+    <div class="decoracoes-fundo">
+        <div class="padrao-malha"></div>
+        <div class="bolha-laranja"></div>
+        <div class="bolha-verde"></div>
+    </div>
      <header>
         <section class="esquerdaHeader">
             <img src="../img/header/smartSemNome.png" alt="" id="imgSmartHeader">
@@ -59,7 +71,7 @@
                 <source src="../img/sobreNos/background.mp4" type="video/mp4">
             </video>
             <div class="textoVideo">
-                <h1 data-i18n="heroTitulo">Inovação e tecnologia para o success das suas criações</h1>
+                <h1 data-i18n="heroTitulo" id="inovacao">Inovação e tecnologia para o success das suas criações</h1>
                 <p data-i18n="heroDescricao">Trabalhamos juntos para buscar a inovação das suas criações através de soluções tecnológicas inteligentes, transformando desafios complexos de reprodução em processos simples, sustentáveis e altamente produtivos.</p>
             </div>
         </section>
@@ -67,7 +79,9 @@
         <section class="conteudoTexto">
             <div class="h2Conteudo">
                 <img src="../img/sobreNos/lampada.png" alt="Lâmpada">
-                <h2 data-i18n="conteudoTitulo">Inovação que gera eficiência</h2>
+                <div class="titulo-secao-moderno">
+                    <h2 data-i18n="conteudoTitulo">Inovação que gera eficiência</h2>
+                </div>
             </div>
 
             <div class="paragrafoConteudo">

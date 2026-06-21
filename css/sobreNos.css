@@ -175,7 +175,7 @@
 .linha-decorativa-lateral {
     width: 50px;
     height: 4px;
-    background: var(--verde-principal);
+    background: #D36135;
     border-radius: 2px;
 }
 
@@ -472,6 +472,40 @@
 .card-ciclo:hover .imgCard {
     transform: scale(1.1);
     opacity: 1;
+}
+
+
+.titulo-secao-moderno {
+    max-width: 1100px;
+    margin: 8px auto 30px auto;
+    padding: 25px 20px;
+    position: relative;
+    
+    background-image: radial-gradient(rgba(56, 77, 47, 0.12) 1.2px, transparent 1.2px);
+    background-size: 24px 24px;
+    background-position: center;
+}
+
+.titulo-secao-moderno h2 {
+    font-family: 'Outfit', sans-serif;
+    color: #384D2F;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.titulo-secao-moderno h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 65px; 
+    height: 5px;
+    background-color: #D36135;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 1440px) {

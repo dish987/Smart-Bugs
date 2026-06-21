@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Bugs - Localização</title>
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="icon" href="../img/header/smartSemNome.png">
     <link rel="stylesheet" href="../css/localizacao.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css'>
@@ -11,6 +13,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+    <a href="https://wa.me/5545999116499?text=Olá, gostaria de mais informações." 
+        class="whatsapp-flutuante" 
+        target="_blank" 
+        aria-label="Fale conosco pelo WhatsApp">
+        <i class="fi fi-brands-whatsapp colorWhats"></i>
+    </a>
+    <div class="decoracoes-fundo">
+        <div class="padrao-malha"></div>
+        <div class="bolha-laranja"></div>
+        <div class="bolha-verde"></div>
+    </div>
     <header>
         <section class="esquerdaHeader">
             <img src="../img/header/smartSemNome.png" alt="" id="imgSmartHeader">
@@ -55,15 +68,15 @@
             <source src="../img/localizacao/background.mp4" type="video/mp4">
         </video>
         <div class="textoVideo">
-            <p data-i18n="heroTitulo">Início > Localização</p>
-            <h1 data-i18n="heroDesc">Descubra a nossa localização e melhore sua produtividade</h1>
+            <p data-i18n="locHeroBread">Início > Localização</p>
+            <h1 data-i18n="locHeroTitle">Descubra a nossa localização e melhore sua produtividade</h1>
         </div>
     </section>
     
 
     <section class="container galpao-grid">
         <div class="titulo-secao-moderno">
-           <h2>Nossa instalação</h2>
+           <h2 data-i18n="locInstalacaoTitulo">Nossa instalação</h2>
        </div>
         <div class="galpao-fotos">
             <img src="../img/localizacao/Foto-Galpao-1.png" class="foto-grid" alt="Galpão 1">
@@ -73,8 +86,8 @@
 
     <section class="mapa-section">
         <div class="titulo-secao-moderno">
-            <h2>Como chegar</h2>
-            <p style="margin-top: 20px;">Rodovia estadual - conexão com BR - PR-182 - Biopark, Toledo - PR, 85906-300</p>
+            <h2 data-i18n="locComoChegarTitulo">Como chegar</h2>
+            <p style="margin-top: 20px;" data-i18n="locEndereco">Rodovia estadual - conexão com BR - PR-182 - Biopark, Toledo - PR, 85906-300</p>
         </div>
 
         <div class="mapa-container-estiloso">
@@ -88,9 +101,9 @@
                 </iframe>
                 
                 <div class="map-overlay">
-                    <span class="map-text">Estamos localizados em Toledo - PR</span>
+                    <span class="map-text" data-i18n="locMapaTexto">Estamos localizados em Toledo - PR</span>
                     <a href="https://www.google.com/maps/place/Biopark+Educa%C3%A7%C3%A3o/@-24.6174572,-53.7124479,17z" target="_blank" class="map-btn">
-                        Abrir no Google Maps <i class="fa-solid fa-location-dot"></i>
+                        <span data-i18n="locMapaBtn">Abrir no Google Maps</span> <i class="fa-solid fa-location-dot"></i>
                     </a>
                 </div>
             </div>
@@ -98,17 +111,16 @@
     </section>
 
     <div class="titulo-secao-moderno">
-        <h2>Contatos</h2>
+        <h2 data-i18n="locContatosTitulo">Contatos</h2>
     </div>
 
     <section class="contato-info-wrapper">
         <div class="fale-conosco">
-            <h1>Fale Conosco</h1>
-            <p>Escolha o canal mais conveniente para você. Nossa equipe de suporte está pronta para ajudar.</p>
+            <h1 data-i18n="locFaleConoscoTitulo">Fale Conosco</h1>
+            <p data-i18n="locFaleConoscoSub">Escolha o canal mais conveniente para você. Nossa equipe de suporte está pronta para ajudar.</p>
         </div>
         
         <div class="contato-card-container">
-            <!-- Grid de Links de Ação -->
             <div class="contato-links-grid">
                 <a href="https://wa.me/5545999116499?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" class="card-contato-item">
                     <div class="icon-box"><i class="fa-brands fa-whatsapp"></i></div>
@@ -131,14 +143,13 @@
                 <a href="mailto:Smartbugs@hotmail.com.br" class="card-contato-item">
                     <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
                     <div class="text-box">
-                        <span class="label-contato">E-mail</span>
+                        <span class="label-contato" data-i18n="locEmailLabel">E-mail</span>
                         <span class="dado-contato gmail">Smartbugs@hotmail.com.br</span>
                     </div>
                     <i class="fa-solid fa-arrow-up-right-from-square arrow-hint"></i>
                 </a>
             </div>
 
-            <!-- Bloco do Avatar Integrado -->
             <div class="avatar-box">
                 <img src="../img/localizacao/Avatar.png" alt="Avatar Atendimento" class="avatar-img">
             </div>
@@ -147,55 +158,58 @@
 
 
     <section class="atendimento">
-    <!-- Usa o título moderno que criamos no passo anterior -->
     <div class="titulo-secao-moderno">
-        <h2>Área de Atendimento</h2>
+        <h2 data-i18n="locAtendTitulo">Área de Atendimento</h2>
     </div>
 
     <div class="atendimento-grid">
-        <!-- Card 1: Horário -->
+        <!-- Card 1 -->
         <div class="atendimento-card">
             <div class="atendimento-icon">
                 <i class="fa-regular fa-clock"></i>
             </div>
             <div class="atendimento-content">
-                <h3>Horário de Funcionamento</h3>
-                <p>Atendemos de Segunda a Sexta-feira, das <strong>08h às 17h</strong>.</p>
+                <h3 data-i18n="locAtendCard1Tit">Horário de Funcionamento</h3>
+                <p data-i18n="locAtendCard1Desc">Atendemos de Segunda a Sexta-feira, das 08h às 17h.</p>
             </div>
         </div>
 
-        <!-- Card 2: Envio/Logística -->
+        <!-- Card 2 -->
         <div class="atendimento-card">
             <div class="atendimento-icon">
                 <i class="fa-solid fa-truck-fast"></i>
             </div>
             <div class="atendimento-content">
-                <h3>Logística e Envios</h3>
-                <p>Contratamos transportadoras para grandes unidades ou Correios para pedidos menores. Você também pode retirar diretamente conosco.</p>
+                <h3 data-i18n="locAtendCard2Tit">Logística e Envios</h3>
+                <p data-i18n="locAtendCard2Desc">Contratamos transportadoras para grandes unidades ou Correios para pedidos menores. Você também pode retirar diretamente conosco.</p>
             </div>
         </div>
 
-        <!-- Card 3: Pedidos/Instagram -->
+        <!-- Card 3 -->
         <div class="atendimento-card">
             <div class="atendimento-icon">
                 <i class="fa-solid fa-link"></i>
             </div>
             <div class="atendimento-content">
-                <h3>Faça seu Pedido</h3>
-                <p>Venha fazer seu pedido e conferir nosso Instagram.</p>
-                <a href="https://linktr.ee/smartbugs_oficial?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnztu96xHihatptpucNxRfJ09uki4RsL59F7h9cN8QRaPVtLJNBjOaN-CsXis_aem_ZmFPLmkoR6Ac4Er2ty0ReA" target="_blank" class="atendimento-link">Acessar Link.tree <i class="fa-solid fa-arrow-right"></i></a>
+                <h3 data-i18n="locAtendCard3Tit">Faça seu Pedido</h3>
+                <p data-i18n="locAtendCard3Desc">Venha fazer seu pedido e conferir nosso Instagram.</p>
+                <a href="https://linktr.ee/smartbugs_oficial?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnztu96xHihatptpucNxRfJ09uki4RsL59F7h9cN8QRaPVtLJNBjOaN-CsXis_aem_ZmFPLmkoR6Ac4Er2ty0ReA" target="_blank" class="atendimento-link">
+                    <span data-i18n="locAtendCard3Btn">Acessar Link.tree</span> <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
         </div>
 
-        <!-- Card 4: WhatsApp -->
+        <!-- Card 4 -->
         <div class="atendimento-card destaque-whats">
             <div class="atendimento-icon">
                 <i class="fa-brands fa-whatsapp"></i>
             </div>
             <div class="atendimento-content">
-                <h3>Ficou com Dúvidas?</h3>
-                <p>Nossa equipe está à disposição para te ajudar rapidamente.</p>
-                <a href="https://wa.me/5545999116499?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" class="atendimento-link link-whats">Chamar no WhatsApp <i class="fa-solid fa-arrow-right"></i></a>
+                <h3 data-i18n="locAtendCard4Tit">Ficou com Dúvidas?</h3>
+                <p data-i18n="locAtendCard4Desc">Nossa equipe está à disposição para te ajudar rapidamente.</p>
+                <a href="https://wa.me/5545999116499?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" class="atendimento-link link-whats">
+                    <span data-i18n="locAtendCard4Btn">Chamar no WhatsApp</span> <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -204,7 +218,7 @@
     <section class="entrega-clientes">
         <div class="container-nosso-trabalho">
             <div class="titulo-secao-moderno">
-            <h2>Nosso trabalho</h2>
+            <h2 data-i18n="locTrabalhoTitulo">Nosso trabalho</h2>
         </div>
             
             <div class="trabalho-grid">
@@ -266,6 +280,8 @@
         </div>
     </footer>
 
+<!-- AQUI: Chamada atualizada para o JS exclusivo desta página -->
+<script src="../js/localizacao.js"></script>
 <script src="../js/index.js"></script>
 </body>
 </html>
