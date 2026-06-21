@@ -299,7 +299,6 @@ footer.footer-smart {
     color: #2A2C2B;
     font-size: 18px;
     font-family: 'DM Sans', sans-serif;
-    text-decoration: none;
     margin-top: 10px;
     transition: transform 0.3s ease, color 0.3s ease;
 }

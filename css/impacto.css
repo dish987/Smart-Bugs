@@ -1,0 +1,653 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    /* ── Paleta oficial Smart Bugs ── */
+    --green-main:    #2D5A3C;   /* Verde Floresta */
+    --green-moss:    #8C9C4A;   /* Musgo Claro */
+    --green-dark:    #384D2F;   /* Verde Escuro */
+    --green-sub:     #24331e;   
+    --orange:        #D36135;   /* Laranja Terroso */
+    --white:         #FFFFFF;   
+    --bg:            #F7F6F2;   /* Bege Claro */
+    --text:          #2A2C2B;   /* Carvão */
+    --border:        #ddddd8;
+    --gray-light:    #efefeb;
+}
+
+.container-limite {
+    max-width: 1140px; 
+    width: 100%;
+    margin: 0 auto;    
+}
+
+/* --- SEÇÃO HERO (VÍDEO DE FUNDO) --- */
+.video-hero {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+#videoFundo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.textoVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.textoVideo h1 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    color: white;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.textoVideo p {
+    font-size: clamp(1rem, 1.5vw, 1.4rem);
+    color: #f5f5f5;
+    font-weight: 500;
+    line-height: 1.5;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* ─── SEÇÃO: DO RESÍDUO ─────────────────────────────── */
+.section-residuo {
+    background: var(--white);
+    padding: 70px 20px; 
+}
+
+.residuo-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#tituloResiduo{
+    max-width: 270px;
+    text-align: start;
+}
+
+.section-label {
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--text);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    opacity: 0.6;
+}
+
+.residuo-title {
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1.05;
+    color: var(--green-dark);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.residuo-title .underline {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+}
+
+.residuo-desc {
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--text);
+    margin-top: 22px;
+    max-width: 340px;
+    opacity: 0.75;
+}
+
+.titulo-secao-moderno {
+    max-width: 1100px;
+    margin: 8px auto 30px auto;
+    padding: 25px 20px;
+    position: relative;
+    
+    background-image: radial-gradient(rgba(56, 77, 47, 0.12) 1.2px, transparent 1.2px);
+    background-size: 24px 24px;
+    background-position: center;
+}
+
+.titulo-secao-moderno h2 {
+    font-family: 'Outfit', sans-serif;
+    color: #384D2F;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.titulo-secao-moderno h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 65px; 
+    height: 5px;
+    background-color: #D36135;
+    border-radius: 10px;
+}
+
+.btns-interessou {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.impactoBTN {
+    width: 200px;
+    height: 60px;
+    text-align: center;
+}
+
+.btn-smart-void {
+    background-color: transparent; 
+    border: 2px solid #D36135;     
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 22px;
+    padding: 8px 8px 8px 20px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    transition: all 0.3s ease;     
+}
+
+.btn-smart-void span {
+    color: #2A2C2B;
+    transition: color 0.3s ease;
+}
+
+.btn-smart-void:hover {
+    transform: scale(1.05);
+    background-color: #D36135;
+}
+
+.btn-smart-void:hover span {
+    color: white;
+}
+
+.stats-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.stat-bubble {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    background: var(--gray-light);
+    border: 1.5px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8px;
+    gap: 2px;
+}
+
+.stat-icon { font-size: 15px; }
+.stat-num  { font-size: 15px; font-weight: 800; color: var(--green-dark); line-height: 1; }
+.stat-lbl  { font-size: 8px; color: var(--text); line-height: 1.3; opacity: 0.7; }
+.stat-lbl-lg { font-size: 9.5px; font-weight: 700; color: var(--green-dark); line-height: 1.3; }
+
+.building-img {
+    width: 100%;
+    max-width: 560px;
+    height: 290px;
+    border-radius: 14px;
+    background: #c5ccc5;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.building-img img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 14px; 
+}
+
+/* ─── SEÇÃO: ETAPAS (ATUALIZAÇÃO PREMIUM) ───────────── */
+.section-etapas {
+    background: var(--bg);
+    padding: 80px 20px;
+}
+
+.etapas-header {
+    display: flex;
+    gap: 40px;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.etapas-header-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.etapas-title {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--green-dark);
+    max-width: 340px;
+}
+
+.etapas-desc {
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--text);
+    max-width: 380px;
+    opacity: 0.75;
+    padding-bottom: 4px;
+}
+
+.etapas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.etapa-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 28px 24px;
+    border: 1px solid rgba(45, 90, 60, 0.08);
+    box-shadow: 0 10px 30px -5px rgba(42, 44, 43, 0.04);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.3s ease;
+}
+
+/* Faixa luminosa de biotecnologia no topo (escondida por padrão) */
+.etapa-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--green-moss), var(--green-main));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.etapa-card.hidden { 
+    visibility: hidden; 
+    pointer-events: none; 
+}
+
+/* O Efeito de Flutuar no Hover */
+.etapa-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px -10px rgba(45, 90, 60, 0.12);
+    border-color: rgba(45, 90, 60, 0.2);
+}
+
+.etapa-card:hover::before {
+    opacity: 1;
+}
+
+.etapa-card-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.etapa-icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: rgba(140, 156, 74, 0.12); 
+    border: 1px solid rgba(140, 156, 74, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.etapa-card:hover .etapa-icon-box {
+    transform: scale(1.08);
+    background: rgba(140, 156, 74, 0.22);
+}
+
+.etapa-numero {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--green-moss);
+    letter-spacing: 0.05em;
+}
+
+.etapa-card-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--green-dark);
+    margin-bottom: 8px;
+}
+
+.etapa-card-desc {
+    font-size: 12.5px;
+    line-height: 1.6;
+    color: var(--text);
+    opacity: 0.72;
+    margin-top: auto; 
+}
+
+/* ─── SEÇÃO: MENOS RESÍDUOS ─────────────────────────── */
+.section-banner-impacto {
+    position: relative;
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+}
+
+.banner-imagem-fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.banner-imagem-fundo img {
+    background-color: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(45, 90, 60, 0.7);
+}
+
+.header-impacto {
+    margin-bottom: 40px;
+}
+
+.menos-title {
+    color: white;
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.menos-desc {
+    color: white;
+    max-width: 500px;
+    margin: 0 auto;
+    opacity: 0.9;
+    font-size: 14px;
+}
+
+.banner-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.banner-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 24px;
+    width: 160px;
+    transition: transform 0.3s ease;
+}
+
+.banner-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.banner-card-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.banner-card-text {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* ─── BANNER VERDE COM CARDS ─────────────────────────── */
+.section-banner {
+    position: relative;
+    width: 100%;
+    min-height: 230px;
+    padding: 40px 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.banner-bg { 
+    position: absolute; 
+    inset: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: #2d5a3c; 
+}
+
+.banner-bg img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+}
+
+.banner-overlay { 
+    position: absolute; 
+    inset: 0; 
+    background: rgba(0, 0, 0, 0.30); 
+}
+
+.banner-cards {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    z-index: 2;
+}
+
+.banner-card {
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 16px;
+    width: 136px;
+    height: 148px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 14px 10px;
+    gap: 10px;
+}
+
+.banner-card-icon { font-size: 28px; }
+.banner-card-text { font-size: 12.5px; font-weight: 600; color: white; line-height: 1.35; }
+.banner-card-text u { font-weight: 800; }
+
+/* ─── SEÇÃO: CTA / INTERESSADO ───────────────────────── */
+.section-cta {
+    background: var(--bg);
+    padding: 100px 20px;
+}
+
+.cta-text{
+    display: flex;
+}
+
+.cta-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 14px;
+}
+
+.cta-title {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--green-dark);
+    max-width: 320px;
+}
+
+#tituloCTA{
+    max-width: 400px;    
+    text-align: start;
+}
+
+.cta-title em {
+    font-style: italic;
+    color: var(--orange);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 12px;
+    margin-left: 7%;
+}
+
+.cta-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--green-main);
+    color: white;
+    border-radius: 28px;
+    padding: 10px 18px 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.cta-btn:hover { 
+    background: var(--green-dark); 
+}
+
+.cta-btn-arrow {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.cta-img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border-radius: 14px;
+}
+
+.cta-img img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 14px; 
+}
+
+
+@media (max-width: 968px) {
+    /* Resíduo */
+    .residuo-flex { 
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        gap: 36px; 
+    }
+    .residuo-desc { max-width: 100%; margin: 16px auto 0 auto; }
+    .stats-row { justify-content: center; flex-wrap: wrap; }
+
+    /* Etapas */
+    .etapas-header { 
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 12px; 
+        margin-bottom: 32px; 
+    }
+    .etapas-title, .etapas-desc { max-width: 100%; }
+    .etapas-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    
+    .etapa-card.hidden { display: none; }
+
+    /* CTA */
+    .cta-text { flex-direction: column; text-align: center; gap: 40px; }
+    .cta-title { max-width: 100%; }
+    .cta-buttons {
+        display: flex;
+        gap: 12px;
+    }
+    .cta-buttons span {
+        font-size: 13px;
+    }
+    
+}
+
+@media (max-width: 580px) {
+    .etapas-grid { grid-template-columns: 1fr; }
+    .building-img, .cta-img { height: auto; aspect-ratio: 16/9; }
+}
