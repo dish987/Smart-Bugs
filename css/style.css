@@ -492,8 +492,9 @@ footer.footer-smart {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 30px;
+        gap: 20px;
     }
+    
     .logo-flex {
         flex-direction: column;
         justify-content: center;
@@ -528,5 +529,8 @@ footer.footer-smart {
     .opcoesHeader {
         height: 30px;
         padding: 12px;
+    }
+    .footer-col {
+        flex: 1 1 100px;
     }
 }
