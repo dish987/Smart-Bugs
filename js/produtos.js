@@ -129,7 +129,10 @@ const traducoes = {
         "prodModalB1L2": "height",
         "prodModalB2L1": "Volume",
         "prodModalB3L1": "Weight",
-        "prodModalBtnFechar": "Close"
+        "prodModalBtnFechar": "Close",
+        footCaixa: "Reproduction Box",
+        footDescubra: "Discover our history",
+        footPlanejamos: "Where do we plan to go"
     },
     es: {
         // Globais
@@ -195,6 +198,9 @@ const traducoes = {
         "prodModalB1L2": "interna",
         "prodModalB2L1": "Volumen",
         "prodModalB3L1": "Peso",
-        "prodModalBtnFechar": "Cerrar"
+        "prodModalBtnFechar": "Cerrar",
+        footCaixa: "Caja de reproducción",
+        footDescubra: "Descubre nuestra historia",
+        footPlanejamos: "¿Adónde pensamos ir?"
     }
 };

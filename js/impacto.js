@@ -89,7 +89,10 @@ const traducoes = {
         "impBannerAgua": "less water consumption",
         "impBannerArea": "less land use",
         "impCtaLabel": "INTERESTED?",
-        "impCtaTit": "Join us on this journey to make the world a better place."
+        "impCtaTit": "Join us on this journey to make the world a better place.",
+        footCaixa: "Reproduction Box",
+        footDescubra: "Discover our history",
+        footPlanejamos: "Where do we plan to go"
     },
     es: {
         // Globais
@@ -135,6 +138,9 @@ const traducoes = {
         "impBannerAgua": "menos consumo de agua",
         "impBannerArea": "Menos área ocupada",
         "impCtaLabel": "¿INTERESADO?",
-        "impCtaTit": "Acompáñanos en esta jornada para hacer del mundo un lugar mejor."
+        "impCtaTit": "Acompáñanos en esta jornada para hacer del mundo un lugar mejor.",
+        footCaixa: "Caja de reproducción",
+        footDescubra: "Descubre nuestra historia",
+        footPlanejamos: "¿Adónde pensamos ir?"
     }
 };

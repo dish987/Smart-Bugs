@@ -81,7 +81,10 @@ const traducoes = {
         ciclo3Titulo: "Processing",
         ciclo3Descricao: "Transformation of larvae into high-quality protein and noble oils.",
         ciclo4Titulo: "Sustainable Nutrition",
-        ciclo4Descricao: "The final product reaches the feed and pet food market."
+        ciclo4Descricao: "The final product reaches the feed and pet food market.",
+        footCaixa: "Reproduction Box",
+        footDescubra: "Discover our history",
+        footPlanejamos: "Where do we plan to go"
     },
     es: {
         "navInicio": "Inicio",
@@ -127,7 +130,10 @@ const traducoes = {
         ciclo3Titulo: "Procesamiento",
         ciclo3Descricao: "Transformación de las larvas en proteínas y aceites nobles.",
         ciclo4Titulo: "Nutrición Sostenible",
-        ciclo4Descricao: "El producto final llega al mercado de alimentos para animales y pet food."
+        ciclo4Descricao: "El producto final llega al mercado de alimentos para animales y pet food.",
+        footCaixa: "Reproduction Box",
+        footDescubra: "Discover our history",
+        footPlanejamos: "Where do we plan to go"
     }
 };
 

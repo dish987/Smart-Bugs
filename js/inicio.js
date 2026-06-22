@@ -90,7 +90,10 @@ const traducoes = {
         footProd: "Products",
         footMais: "More Smart",
         footCont: "Contacts",
-        btnEquipe: "Join our team"
+        btnEquipe: "Join our team",
+        footCaixa: "Reproduction Box",
+        footDescubra: "Discover our history",
+        footPlanejamos: "Where do we plan to go"
     },
     es: {
         "navInicio": "Inicio",
@@ -141,6 +144,9 @@ const traducoes = {
         footProd: "Productos",
         footMais: "Más Smart",
         footCont: "Contactos",
-        btnEquipe: "Únete a nuestro equipo"
+        btnEquipe: "Únete a nuestro equipo",
+        footCaixa: "Caja de reproducción",
+        footDescubra: "Descubre nuestra historia",
+        footPlanejamos: "¿Adónde pensamos ir?"
     }
 };

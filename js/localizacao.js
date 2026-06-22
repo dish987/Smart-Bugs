@@ -76,7 +76,10 @@ const traducoes = {
         "locAtendCard4Tit": "Have Questions?",
         "locAtendCard4Desc": "Our team is available to assist you quickly.",
         "locAtendCard4Btn": "Chat on WhatsApp",
-        "locTrabalhoTitulo": "Our Work"
+        "locTrabalhoTitulo": "Our Work",
+        footCaixa: "Reproduction Box",
+        footDescubra: "Discover our history",
+        footPlanejamos: "Where do we plan to go"
     },
     es: {
         "navInicio": "Inicio",
@@ -116,6 +119,9 @@ const traducoes = {
         "locAtendCard4Tit": "¿Tienes Dudas?",
         "locAtendCard4Desc": "Nuestro equipo está a disposición para ayudarte rápidamente.",
         "locAtendCard4Btn": "Contactar por WhatsApp",
-        "locTrabalhoTitulo": "Nuestro Trabajo"
+        "locTrabalhoTitulo": "Nuestro Trabajo",
+        footCaixa: "Caja de reproducción",
+        footDescubra: "Descubre nuestra historia",
+        footPlanejamos: "¿Adónde pensamos ir?"
     }
 };
