@@ -49,6 +49,9 @@ const traducoes = {
         "footMais": "More Smart",
         "footCont": "Contacts",
         "btnEquipe": "Join our team",
+        "footLinkHist": "Discover our story",
+        "footLinkPlan": "Where we plan to go",
+        "emBreve": "Coming Soon...",
 
         // Específicos da página Localização
         "locHeroBread": "Home > Location",
@@ -76,7 +79,6 @@ const traducoes = {
         "locTrabalhoTitulo": "Our Work"
     },
     es: {
-        // Globais
         "navInicio": "Inicio",
         "navLocalizacao": "Ubicación",
         "navImpacto": "Impacto",
@@ -87,6 +89,9 @@ const traducoes = {
         "footMais": "Más Smart",
         "footCont": "Contactos",
         "btnEquipe": "Forma parte de nuestro equipo",
+        "footLinkHist": "Descubre nuestra historia",
+        "footLinkPlan": "A dónde planeamos llegar",
+        "emBreve": "Próximamente...",
 
         // Específicos da página Localização
         "locHeroBread": "Inicio > Ubicación",

@@ -1,36 +1,200 @@
-// Scrools header
-const header = document.querySelector('header');
+const traducoes = {
+    pt: {
+        // Globais (Header e Footer)
+        "navInicio": "Início",
+        "navLocalizacao": "Localização",
+        "navImpacto": "Impacto",
+        "navProdutos": "Produtos",
+        "navSobreNos": "Sobre nós",
+        "footSub": "Tecnologia que impulsiona a biotecnologia",
+        "footProd": "Produtos",
+        "footMais": "Mais Smart",
+        "footCont": "Contatos",
+        "btnEquipe": "Faça parte da nossa equipe",
+        "footLinkHist": "Descubra nossa história",
+        "footLinkPlan": "Onde planejamos chegar",
+        "emBreve": "Em Breve...",
 
-window.addEventListener('scroll', () => {
-    window.scrollY > 20 ? header.classList.add('header-rolado') : header.classList.remove('header-rolado');
-});
+        // Específicos da página Produtos
+        "prodHeroBread": "Início > Produtos",
+        "prodHeroDesc": "Descubra o nosso portfólio e otimize a sua produção",
+        "prodPageTitle": "Nossos produtos",
+        "prodFiltroTit": "Filtro",
+        "prodFiltroTodos": "Todos os itens",
+        "prodFiltroCaixas": "Caixas Criadoras",
+        "prodFiltroLarvas": "Larvas",
+        "prodFiltroOvos": "Ovos",
+        "prodBadgeEquip": "Equipamento",
+        "prodCard1Tit": "Caixa Empilhável",
+        "prodCard1Desc": "Auxilia na reprodução de larvas, com eficiência e de fácil manejo.",
+        "prodBtnSaibaMais": "Saiba Mais",
+        "prodDifTit": "Por que escolher a Smart Bugs?",
+        "prodDifCard1Tit": "Sustentabilidade",
+        "prodDifCard1Desc": "Nossos processos são 100% voltados para a economia circular, reduzindo drasticamente o impacto ambiental.",
+        "prodDifCard2Tit": "Qualidade Garantida",
+        "prodDifCard2Desc": "Equipamentos testados e larvas criadas sob os mais rigorosos padrões de biossegurança do mercado.",
+        "prodDifCard3Tit": "Alta Produtividade",
+        "prodDifCard3Desc": "Caixas e sistemas projetados especificamente para maximizar o rendimento da sua criação de forma inteligente.",
+        "prodFaqTit": "Perguntas Frequentes",
+        "prodFaq1Q": "Vocês entregam para todo o Brasil?",
+        "prodFaq1A": "Sim! Contamos com uma rede de logística preparada para enviar nossos equipamentos e kits iniciais para qualquer região do país com total segurança e agilidade.",
+        "prodFaq2Q": "As caixas criadoras servem para quais insetos?",
+        "prodFaq2A": "Nossas caixas foram desenvolvidas com foco no Tenebrio Molitor e na Mosca Soldado Negra (BSF), mas o design com vão livre e ventilação otimizada permite adaptação para diversas outras espécies.",
+        "prodFaq3Q": "Vocês oferecem suporte para quem está começando?",
+        "prodFaq3A": "Com certeza. Temos materiais de apoio e uma equipe técnica ponta de lança pronta para tirar suas dúvidas durante a implementação do seu projeto biotecnológico.",
+        "prodFaq4Q": "De qual material são feitas as caixas criadoras?",
+        "prodFaq4A": "Nossas caixas são produzidas em Polipropileno (PP) Virgem, com aditivos isentos de Bisfenol (BPA Free). Isso garante alta durabilidade, resistência (suportando até 25kg por peça) e total segurança, evitando contaminações na sua colônia.",
+        "prodFaq5Q": "Tenho pouco espaço físico. O sistema de vocês funciona para mim?",
+        "prodFaq5A": "Perfeitamente! Nosso equipamento foi projetado para ser totalmente empilhável. Isso permite que você expanda sua produção de forma vertical, otimizando cada metro quadrado da sua instalação sem prejudicar a ventilação.",
+        "prodFaq6Q": "Como é feita a higienização dos equipamentos?",
+        "prodFaq6A": "O design interno das caixas foi pensado para evitar o acúmulo de resíduos nos cantos, facilitando o manejo. Elas podem ser lavadas facilmente com água e detergente neutro, ou desinfetadas com soluções padrão de biossegurança sem danificar o plástico.",
+        "prodFaq7Q": "Como posso solicitar um orçamento para compras em atacado?",
+        "prodFaq7A": "Para estruturar uma fazenda de insetos do zero ou comprar em grande volume, basta entrar em contato conosco pelo botão do WhatsApp ou por nossas redes sociais no rodapé. Nossa equipe montará uma proposta personalizada para a sua necessidade!",
+        "prodModalBadge": "Caixas",
+        "prodModalTit": "Caixas Criadoras",
+        "prodModalSpec1": ". Material: Polipropileno PP Virgem com aditivos isentos de Bisfenol.",
+        "prodModalSpec2": ". Dimensão Externa (C x L x A): 60 x 40 x 19 cm.",
+        "prodModalSpec3": ". Capacidade Volumétrica Interna: 28 Litros.",
+        "prodModalSpec4": ". Capacidade de Carga por peça: 25 kg.",
+        "prodModalSpec5": ". Vão Livre Interno: 7 cm (essencial para ventilação e manejo).",
+        "prodModalSpec6": ". Cor: Azul (em outras cores, ver possibilidade de encomenda).",
+        "prodModalDesc": "Nossa caixa é projetada para otimizar o espaço, garantir a ventilação e atender às boas práticas de criação.",
+        "prodModalB1L1": "Altura",
+        "prodModalB1L2": "interna",
+        "prodModalB2L1": "Cubagem",
+        "prodModalB3L1": "Peso",
+        "prodModalBtnFechar": "Fechar"
+    },
+    en: {
+        // Globais
+        "navInicio": "Home",
+        "navLocalizacao": "Location",
+        "navImpacto": "Impact",
+        "navProdutos": "Products",
+        "navSobreNos": "About us",
+        "footSub": "Technology driving biotechnology",
+        "footProd": "Products",
+        "footMais": "More Smart",
+        "footCont": "Contacts",
+        "btnEquipe": "Join our team",
+        "footLinkHist": "Discover our story",
+        "footLinkPlan": "Where we plan to go",
+        "emBreve": "Coming Soon...",
 
-// Menu de tradução
-const botaoTraducao = document.getElementById('traducao');
-const menuIdiomas = document.querySelector('.menu-idiomas');
+        // Específicos da página Produtos
+        "prodHeroBread": "Home > Products",
+        "prodHeroDesc": "Discover our portfolio and optimize your production",
+        "prodPageTitle": "Our Products",
+        "prodFiltroTit": "Filter",
+        "prodFiltroTodos": "All items",
+        "prodFiltroCaixas": "Breeder Boxes",
+        "prodFiltroLarvas": "Larvae",
+        "prodFiltroOvos": "Eggs",
+        "prodBadgeEquip": "Equipment",
+        "prodCard1Tit": "Stackable Box",
+        "prodCard1Desc": "Assists in larvae reproduction, highly efficient and easy to handle.",
+        "prodBtnSaibaMais": "Learn More",
+        "prodDifTit": "Why choose Smart Bugs?",
+        "prodDifCard1Tit": "Sustainability",
+        "prodDifCard1Desc": "Our processes are 100% focused on the circular economy, drastically reducing environmental impact.",
+        "prodDifCard2Tit": "Guaranteed Quality",
+        "prodDifCard2Desc": "Tested equipment and larvae raised under the strictest biosecurity standards in the market.",
+        "prodDifCard3Tit": "High Productivity",
+        "prodDifCard3Desc": "Boxes and systems specifically designed to intelligently maximize your farm's yield.",
+        "prodFaqTit": "Frequently Asked Questions",
+        "prodFaq1Q": "Do you ship all over Brazil?",
+        "prodFaq1A": "Yes! We have a logistics network ready to ship our equipment and starter kits to any region of the country safely and quickly.",
+        "prodFaq2Q": "Which insects are the breeder boxes suitable for?",
+        "prodFaq2A": "Our boxes were developed focusing on Tenebrio Molitor and Black Soldier Fly (BSF), but the open-span design and optimized ventilation allow adaptation for several other species.",
+        "prodFaq3Q": "Do you offer support for beginners?",
+        "prodFaq3A": "Absolutely. We have support materials and a cutting-edge technical team ready to clear up your doubts during the implementation of your biotech project.",
+        "prodFaq4Q": "What material are the breeder boxes made of?",
+        "prodFaq4A": "Our boxes are made of Virgin Polypropylene (PP) with BPA-Free additives. This guarantees high durability, resistance (supporting up to 25kg per unit), and complete safety against colony contamination.",
+        "prodFaq5Q": "I have limited space. Will your system work for me?",
+        "prodFaq5A": "Perfectly! Our equipment was designed to be fully stackable. This allows you to scale your production vertically, optimizing every square meter of your facility without compromising airflow.",
+        "prodFaq6Q": "How is the equipment sanitized?",
+        "prodFaq6A": "The internal design prevents residue buildup in the corners. They can be easily washed with water and neutral detergent, or disinfected with standard biosecurity solutions without damaging the plastic.",
+        "prodFaq7Q": "How can I request a quote for wholesale purchases?",
+        "prodFaq7A": "To structure an insect farm from scratch or buy in large volumes, simply reach out to us via the WhatsApp button or our social networks in the footer. Our team will prepare a customized proposal!",
+        "prodModalBadge": "Boxes",
+        "prodModalTit": "Breeder Boxes",
+        "prodModalSpec1": ". Material: Virgin PP Polypropylene with BPA-Free additives.",
+        "prodModalSpec2": ". External Dimensions (L x W x H): 60 x 40 x 19 cm.",
+        "prodModalSpec3": ". Internal Volumetric Capacity: 28 Liters.",
+        "prodModalSpec4": ". Load Capacity per piece: 25 kg.",
+        "prodModalSpec5": ". Internal Open Span: 7 cm (essential for ventilation and handling).",
+        "prodModalSpec6": ". Color: Blue (for other colors, check availability upon request).",
+        "prodModalDesc": "Our box is designed to optimize space, guarantee ventilation, and adhere to good breeding practices.",
+        "prodModalB1L1": "Internal",
+        "prodModalB1L2": "height",
+        "prodModalB2L1": "Volume",
+        "prodModalB3L1": "Weight",
+        "prodModalBtnFechar": "Close"
+    },
+    es: {
+        // Globais
+        "navInicio": "Inicio",
+        "navLocalizacao": "Ubicación",
+        "navImpacto": "Impacto",
+        "navProdutos": "Productos",
+        "navSobreNos": "Sobre nosotros",
+        "footSub": "Tecnología que impulsa la biotecnología",
+        "footProd": "Productos",
+        "footMais": "Más Smart",
+        "footCont": "Contactos",
+        "btnEquipe": "Forma parte de nuestro equipo",
+        "footLinkHist": "Descubre nuestra historia",
+        "footLinkPlan": "A dónde planeamos llegar",
+        "emBreve": "Próximamente...",
 
-botaoTraducao.addEventListener('click', (event) => {
-    event.stopPropagation(); 
-    botaoTraducao.classList.toggle('ativo');
-    menuIdiomas.classList.toggle('ativo');
-});
-
-document.addEventListener('click', () => {
-    botaoTraducao.classList.remove('ativo');
-    menuIdiomas.classList.remove('ativo');
-});
-
-const navMenu = document.getElementById('navMenu');
-const menuMobile = document.querySelector('.menuMobile');
-
-navMenu.addEventListener('click', (e) => {
-    e.stopPropagation(); 
-    menuMobile.classList.toggle('ativo');
-});
-
-document.addEventListener('click', () => {
-    if (menuMobile.classList.contains('ativo')) {
-        menuMobile.classList.remove('ativo');
+        // Específicos da página Productos
+        "prodHeroBread": "Inicio > Productos",
+        "prodHeroDesc": "Descubre nuestro portafolio y optimiza tu producción",
+        "prodPageTitle": "Nuestros Productos",
+        "prodFiltroTit": "Filtro",
+        "prodFiltroTodos": "Todos los artículos",
+        "prodFiltroCaixas": "Cajas Criadoras",
+        "prodFiltroLarvas": "Larvas",
+        "prodFiltroOvos": "Huevos",
+        "prodBadgeEquip": "Equipamiento",
+        "prodCard1Tit": "Caja Apilable",
+        "prodCard1Desc": "Ayuda en la reproducción de larvas, con eficiencia y de fácil manejo.",
+        "prodBtnSaibaMais": "Saber Más",
+        "prodDifTit": "¿Por qué elegir Smart Bugs?",
+        "prodDifCard1Tit": "Sostenibilidad",
+        "prodDifCard1Desc": "Nuestros procesos están 100% orientados a la economía circular, reduciendo drásticamente el impacto ambiental.",
+        "prodDifCard2Tit": "Calidad Garantizada",
+        "prodDifCard2Desc": "Equipos probados y larvas criadas bajo los más estrictos estándares de bioseguridad del mercado.",
+        "prodDifCard3Tit": "Alta Productividad",
+        "prodDifCard3Desc": "Cajas y sistemas diseñados específicamente para maximizar de forma inteligente el rendimiento de tu cría.",
+        "prodFaqTit": "Preguntas Frecuentes",
+        "prodFaq1Q": "¿Hacen envíos a todo Brasil?",
+        "prodFaq1A": "¡Sí! Contamos con una red de logística preparada para enviar nuestros equipos y kits iniciales a cualquier región del país con total seguridad y rapidez.",
+        "prodFaq2Q": "¿Para qué insectos sirven las cajas criadoras?",
+        "prodFaq2A": "Nuestras cajas fueron desarrolladas enfocándose en Tenebrio Molitor y la Mosca Soldado Negra (BSF), pero el diseño con espacio libre y ventilación optimizada permite su adaptación a diversas especies.",
+        "prodFaq3Q": "¿Ofrecen soporte para quienes están empezando?",
+        "prodFaq3A": "Por supuesto. Disponemos de material de apoyo y un equipo técnico de vanguardia listo para resolver tus dudas durante la implementación de tu proyecto biotecnológico.",
+        "prodFaq4Q": "¿De qué material están hechas las cajas criadoras?",
+        "prodFaq4A": "Nuestras cajas se fabrican en Polipropileno (PP) Virgen con aditivos libres de Bisfenol (BPA Free). Esto garantiza una alta durabilidad, resistencia (soportando hasta 25kg por unidad) y total seguridad contra contaminaciones.",
+        "prodFaq5Q": "Tengo poco espacio físico. ¿Su sistema me sirve?",
+        "prodFaq5A": "¡Perfectamente! Nuestro equipo fue diseñado para ser totalmente apilable. Esto te permite expandir tu producción de forma vertical, optimizando cada metro cuadrado sin perjudicar la ventilación.",
+        "prodFaq6Q": "¿Cómo se realiza la higienización de los equipos?",
+        "prodFaq6A": "El diseño interno evita la acumulación de residuos en las esquinas. Se pueden lavar fácilmente con agua y detergente neutro, o desinfectar con soluciones estándar de bioseguridad sin dañar el plástico.",
+        "prodFaq7Q": "¿Cómo puedo solicitar un presupuesto para compras al por mayor?",
+        "prodFaq7A": "Para estructurar una granja de insectos desde cero o comprar en gran volumen, solo tienes que contactarnos a través del botón de WhatsApp o nuestras redes sociales en el pie de página. ¡Te haremos una propuesta a medida!",
+        "prodModalBadge": "Cajas",
+        "prodModalTit": "Cajas Criadoras",
+        "prodModalSpec1": ". Material: Polipropileno PP Virgen con aditivos libres de Bisfenol.",
+        "prodModalSpec2": ". Dimensiones Externas (L x An x Al): 60 x 40 x 19 cm.",
+        "prodModalSpec3": ". Capacidad Volumétrica Interna: 28 Litros.",
+        "prodModalSpec4": ". Capacidad de Carga por unidad: 25 kg.",
+        "prodModalSpec5": ". Espacio Libre Interno: 7 cm (esencial para ventilación y manejo).",
+        "prodModalSpec6": ". Color: Azul (para otros colores, consultar disponibilidad por encargo).",
+        "prodModalDesc": "Nuestra caja está diseñada para optimizar el espacio, garantizar la ventilación y cumplir con las buenas prácticas de cría.",
+        "prodModalB1L1": "Altura",
+        "prodModalB1L2": "interna",
+        "prodModalB2L1": "Volumen",
+        "prodModalB3L1": "Peso",
+        "prodModalBtnFechar": "Cerrar"
     }
-});
-
+};

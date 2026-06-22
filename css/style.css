@@ -57,6 +57,7 @@ header.header-rolado .menu-idiomas {
     display: flex;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
 }
 
 #imgSmartHeader {

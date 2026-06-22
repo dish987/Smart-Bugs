@@ -27,10 +27,10 @@
         <div class="bolha-verde"></div>
     </div>
     <header>
-        <section class="esquerdaHeader">
+        <a href="../index.html" class="esquerdaHeader">
             <img src="../img/header/smartSemNome.png" alt="" id="imgSmartHeader">
             <h2 id="headerTitulo"><label style="color: #F32A10;">SMART</label> BUGS</h2>
-        </section>
+        </a>
         <section class="direitaHeader">
             <nav class="navHeader">
                 <a id="navInicio" href="../index.html" data-i18n="navInicio">Início</a>
@@ -59,7 +59,7 @@
                     <a id="navLocalizacaoMobile" href="localizacao.html" data-i18n="navLocalizacao">Localização</a>
                     <a id="navImpactoMobile" href="impacto.html" data-i18n="navImpacto">Impacto</a>
                     <a id="navProdutosMobile" href="produtos-SM2.html" data-i18n="navProdutos">Produtos</a>
-                    <a id="navSobreNosMobile" href="html/sobreNos.html" data-i18n="navSobreNos">Sobre nós</a>
+                    <a id="navSobreNosMobile" href="sobreNos.html" data-i18n="navSobreNos">Sobre nós</a>
                 </section>
             </section>
         </section>
@@ -70,13 +70,13 @@
             <source src="../img/index/background.mp4" type="video/mp4">
         </video>
         <div class="textoVideo">
-            <p data-i18n="heroTitulo">Início > Produtos</p>
-            <h1 data-i18n="heroDesc">Descubra o nosso portifólio e otimize a sua produção</h1>
+            <p data-i18n="prodHeroBread">Início > Produtos</p>
+            <h1 data-i18n="prodHeroDesc">Descubra o nosso portfólio e otimize a sua produção</h1>
         </div>
     </section>
 
     <div class="page-header">
-        <h1 class="page-title">
+        <h1 class="page-title" data-i18n="prodPageTitle">
             Nossos produtos
         </h1>
     </div>
@@ -86,25 +86,25 @@
         <aside class="filter-wrapper">
             <div class="filter-box">
                 <div class="filter-header">
-                    <h2 class="filter-title">Filtro</h2>
+                    <h2 class="filter-title" data-i18n="prodFiltroTit">Filtro</h2>
                     <div class="filter-line"></div>
                 </div>
                 <div class="filter-list">
                     <label class="filter-item">
                         <input type="checkbox" id="filter-todos" checked value="todos">
-                        <span>Todos os itens</span>
+                        <span data-i18n="prodFiltroTodos">Todos os itens</span>
                     </label>
                     <label class="filter-item">
                         <input type="checkbox" class="filter-cb" value="caixas">
-                        <span>Caixas Criadoras</span>
+                        <span data-i18n="prodFiltroCaixas">Caixas Criadoras</span>
                     </label>
                     <label class="filter-item">
                         <input type="checkbox" class="filter-cb" value="larvas">
-                        <span>Larvas</span>
+                        <span data-i18n="prodFiltroLarvas">Larvas</span>
                     </label>
                     <label class="filter-item">
                         <input type="checkbox" class="filter-cb" value="ovos">
-                        <span>Ovos</span>
+                        <span data-i18n="prodFiltroOvos">Ovos</span>
                     </label>
                 </div>
             </div>
@@ -115,12 +115,12 @@
                 
                 <article class="product-card" data-category="caixas">
                     <img src="../img/caixa.png" alt="Produto" class="product-img">
-                    <span class="badge-category">Equipamento</span>
-                    <h3 class="product-name">Caixa Empilhável</h3>
-                    <p class="product-desc">Auxilia na reprodução de larvas, com eficiência e de fácil manejo.</p>
+                    <span class="badge-category" data-i18n="prodBadgeEquip">Equipamento</span>
+                    <h3 class="product-name" data-i18n="prodCard1Tit">Caixa Empilhável</h3>
+                    <p class="product-desc" data-i18n="prodCard1Desc">Auxilia na reprodução de larvas, com eficiência e de fácil manejo.</p>
                     <div class="product-actions">
                         <button class="btn-more" onclick="openModal()">
-                            <span class="text">Saiba Mais</span>
+                            <span class="text" data-i18n="prodBtnSaibaMais">Saiba Mais</span>
                             <span class="icon">
                                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
@@ -143,60 +143,60 @@
     </div>
 
     <section class="diferenciais-section">
-        <h2 class="diferenciais-titulo">Por que escolher a Smart Bugs?</h2>
+        <h2 class="diferenciais-titulo" data-i18n="prodDifTit">Por que escolher a Smart Bugs?</h2>
         <div class="diferenciais-grid">
             <div class="diferencial-card">
                 <i class="fi fi-br-leaf diferencial-icon"></i>
-                <h3>Sustentabilidade</h3>
-                <p>Nossos processos são 100% voltados para a economia circular, reduzindo drasticamente o impacto ambiental.</p>
+                <h3 data-i18n="prodDifCard1Tit">Sustentabilidade</h3>
+                <p data-i18n="prodDifCard1Desc">Nossos processos são 100% voltados para a economia circular, reduzindo drasticamente o impacto ambiental.</p>
             </div>
             <div class="diferencial-card">
                 <i class="fi fi-br-shield-check diferencial-icon"></i>
-                <h3>Qualidade Garantida</h3>
-                <p>Equipamentos testados e larvas criadas sob os mais rigorosos padrões de biossegurança do mercado.</p>
+                <h3 data-i18n="prodDifCard2Tit">Qualidade Garantida</h3>
+                <p data-i18n="prodDifCard2Desc">Equipamentos testados e larvas criadas sob os mais rigorosos padrões de biossegurança do mercado.</p>
             </div>
             <div class="diferencial-card">
                 <i class="fi fi-br-rocket-lunch diferencial-icon"></i>
-                <h3>Alta Produtividade</h3>
-                <p>Caixas e sistemas projetados especificamente para maximizar o rendimento da sua criação de forma inteligente.</p>
+                <h3 data-i18n="prodDifCard3Tit">Alta Produtividade</h3>
+                <p data-i18n="prodDifCard3Desc">Caixas e sistemas projetados especificamente para maximizar o rendimento da sua criação de forma inteligente.</p>
             </div>
         </div>
     </section>
 
     <section class="faq-section">
         <div class="faq-container">
-            <h2 class="faq-titulo">Perguntas Frequentes</h2>
+            <h2 class="faq-titulo" data-i18n="prodFaqTit">Perguntas Frequentes</h2>
             <div class="faq-lista">
                 <details class="faq-item">
-                    <summary>Vocês entregam para todo o Brasil?</summary>
-                    <p>Sim! Contamos com uma rede de logística preparada para enviar nossos equipamentos e kits iniciais para qualquer região do país com total segurança e agilidade.</p>
+                    <summary data-i18n="prodFaq1Q">Vocês entregam para todo o Brasil?</summary>
+                    <p data-i18n="prodFaq1A">Sim! Contamos com uma rede de logística preparada para enviar nossos equipamentos e kits iniciais para qualquer região do país com total segurança e agilidade.</p>
                 </details>
                 <details class="faq-item">
-                    <summary>As caixas criadoras servem para quais insetos?</summary>
-                    <p>Nossas caixas foram desenvolvidas com foco no Tenebrio Molitor e na Mosca Soldado Negra (BSF), mas o design com vão livre e ventilação otimizada permite adaptação para diversas outras espécies.</p>
+                    <summary data-i18n="prodFaq2Q">As caixas criadoras servem para quais insetos?</summary>
+                    <p data-i18n="prodFaq2A">Nossas caixas foram desenvolvidas com foco no Tenebrio Molitor e na Mosca Soldado Negra (BSF), mas o design com vão livre e ventilação otimizada permite adaptação para diversas outras espécies.</p>
                 </details>
                 <details class="faq-item">
-                    <summary>Vocês oferecem suporte para quem está começando?</summary>
-                    <p>Com certeza. Temos materiais de apoio e uma equipe técnica ponta de lança pronta para tirar suas dúvidas durante a implementação do seu projeto biotecnológico.</p>
+                    <summary data-i18n="prodFaq3Q">Vocês oferecem suporte para quem está começando?</summary>
+                    <p data-i18n="prodFaq3A">Com certeza. Temos materiais de apoio e uma equipe técnica ponta de lança pronta para tirar suas dúvidas durante a implementação do seu projeto biotecnológico.</p>
                 </details>
                 <details class="faq-item">
-                    <summary>De qual material são feitas as caixas criadoras?</summary>
-                    <p>Nossas caixas são produzidas em Polipropileno (PP) Virgem, com aditivos isentos de Bisfenol (BPA Free). Isso garante alta durabilidade, resistência (suportando até 25kg por peça) e total segurança, evitando contaminações na sua colônia.</p>
+                    <summary data-i18n="prodFaq4Q">De qual material são feitas as caixas criadoras?</summary>
+                    <p data-i18n="prodFaq4A">Nossas caixas são produzidas em Polipropileno (PP) Virgem, com aditivos isentos de Bisfenol (BPA Free). Isso garante alta durabilidade, resistência (suportando até 25kg por peça) e total segurança, evitando contaminações na sua colônia.</p>
                 </details>
                 
                 <details class="faq-item">
-                    <summary>Tenho pouco espaço físico. O sistema de vocês funciona para mim?</summary>
-                    <p>Perfeitamente! Nosso equipamento foi projetado para ser totalmente empilhável. Isso permite que você expanda sua produção de forma vertical, otimizando cada metro quadrado da sua instalação sem prejudicar a ventilação.</p>
+                    <summary data-i18n="prodFaq5Q">Tenho pouco espaço físico. O sistema de vocês funciona para mim?</summary>
+                    <p data-i18n="prodFaq5A">Perfeitamente! Nosso equipamento foi projetado para ser totalmente empilhável. Isso permite que você expanda sua produção de forma vertical, otimizando cada metro quadrado da sua instalação sem prejudicar a ventilação.</p>
                 </details>
 
                 <details class="faq-item">
-                    <summary>Como é feita a higienização dos equipamentos?</summary>
-                    <p>O design interno das caixas foi pensado para evitar o acúmulo de resíduos nos cantos, facilitando o manejo. Elas podem ser lavadas facilmente com água e detergente neutro, ou desinfetadas com soluções padrão de biossegurança sem danificar o plástico.</p>
+                    <summary data-i18n="prodFaq6Q">Como é feita a higienização dos equipamentos?</summary>
+                    <p data-i18n="prodFaq6A">O design interno das caixas foi pensado para evitar o acúmulo de resíduos nos cantos, facilitando o manejo. Elas podem ser lavadas facilmente com água e detergente neutro, ou desinfetadas com soluções padrão de biossegurança sem danificar o plástico.</p>
                 </details>
 
                 <details class="faq-item">
-                    <summary>Como posso solicitar um orçamento para compras em atacado?</summary>
-                    <p>Para estruturar uma fazenda de insetos do zero ou comprar em grande volume, basta entrar em contato conosco pelo botão do WhatsApp ou por nossas redes sociais no rodapé. Nossa equipe montará uma proposta personalizada para a sua necessidade!</p>
+                    <summary data-i18n="prodFaq7Q">Como posso solicitar um orçamento para compras em atacado?</summary>
+                    <p data-i18n="prodFaq7A">Para estruturar uma fazenda de insetos do zero ou comprar em grande volume, basta entrar em contato conosco pelo botão do WhatsApp ou por nossas redes sociais no rodapé. Nossa equipe montará uma proposta personalizada para a sua necessidade!</p>
                 </details>
             </div>
         </div>
@@ -206,8 +206,8 @@
         <div class="modal-content">
             
             <div class="modal-header-row">
-                <span class="badge-category" style="margin-bottom: 0;">Caixas</span>
-                <h2 class="modal-title">Caixas Criadoras</h2>
+                <span class="badge-category" style="margin-bottom: 0;" data-i18n="prodModalBadge">Caixas</span>
+                <h2 class="modal-title" data-i18n="prodModalTit">Caixas Criadoras</h2>
                 <div class="modal-divider">
                     <svg viewBox="0 0 200 20" fill="none" stroke="currentColor" stroke-width="1.5">
                         <path d="M 10 10 Q 30 10 50 10 C 60 10 65 2 70 10 C 75 18 80 10 90 10 C 100 10 105 2 110 10 C 115 18 120 10 130 10 C 140 10 145 2 150 10 C 155 18 160 10 170 10 Q 180 10 190 10" stroke-linecap="round"/>
@@ -219,38 +219,38 @@
                 <div>
                     <img src="../img/caixa.png" alt="Caixa Criadora" class="modal-img">
                     <ul class="modal-specs">
-                        <li>. Material: Polipropileno PP Virgem com aditivos isentos de Bisfenol.</li>
-                        <li>. Dimensão Externa (C x L x A): 60 x 40 x 19 cm.</li>
-                        <li>. Capacidade Volumétrica Interna: 28 Litros.</li>
-                        <li>. Capacidade de Carga por peça: 25 kg.</li>
-                        <li>. Vão Livre Interno: 7 cm (essencial para ventilação e manejo).</li>
-                        <li>. Cor: Azul (em outras cores, ver possibilidade de encomenda).</li>
+                        <li data-i18n="prodModalSpec1">. Material: Polipropileno PP Virgem com aditivos isentos de Bisfenol.</li>
+                        <li data-i18n="prodModalSpec2">. Dimensão Externa (C x L x A): 60 x 40 x 19 cm.</li>
+                        <li data-i18n="prodModalSpec3">. Capacidade Volumétrica Interna: 28 Litros.</li>
+                        <li data-i18n="prodModalSpec4">. Capacidade de Carga por peça: 25 kg.</li>
+                        <li data-i18n="prodModalSpec5">. Vão Livre Interno: 7 cm (essencial para ventilação e manejo).</li>
+                        <li data-i18n="prodModalSpec6">. Cor: Azul (em outras cores, ver possibilidade de encomenda).</li>
                     </ul>
                 </div>
 
                 <div style="display: flex; flex-direction: column;">
-                    <p class="modal-desc">
+                    <p class="modal-desc" data-i18n="prodModalDesc">
                         Nossa caixa é projetada para otimizar o espaço, garantir a ventilação e atender às boas práticas de criação.
                     </p>
                     
                     <div class="modal-badges-grid">
                         <div class="modal-badge-gray">
-                            <span>Altura</span>
-                            <span>interna</span>
+                            <span data-i18n="prodModalB1L1">Altura</span>
+                            <span data-i18n="prodModalB1L2">interna</span>
                             <span>12cm</span>
                         </div>
                         <div class="modal-badge-gray">
-                            <span>Cubagem</span>
+                            <span data-i18n="prodModalB2L1">Cubagem</span>
                             <span>0,048 m³</span>
                         </div>
                         <div class="modal-badge-gray">
-                            <span>Peso</span>
+                            <span data-i18n="prodModalB3L1">Peso</span>
                             <span>1,100kg</span>
                         </div>
                     </div>
 
                     <button class="btn-close-modal" style="margin-top: auto;" onclick="closeModal()">
-                        <span class="text">Fechar</span>
+                        <span class="text" data-i18n="prodModalBtnFechar">Fechar</span>
                         <span class="icon">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
@@ -270,7 +270,7 @@
                     <img src="../img/header/smartSemNome.png" alt="Logo" class="logo-footer-img">
                     <div class="logo-txt">
                         <h1>SMART BUGS</h1>
-                        <p>Tecnologia que impulsiona a biotecnologia</p>
+                        <p data-i18n="footSub">Tecnologia que impulsiona a biotecnologia</p>
                     </div>
                 </div>
             </section>
@@ -285,8 +285,8 @@
             <nav class="footer-col">
                 <h3 data-i18n="footMais">Mais Smart</h3>
                 <ul>
-                    <li><a href="sobreNos.html">Descubra nossa história</a></li>
-                    <li><a href="sobreNos.html">Onde planejamos chegar</a></li>
+                    <li><a href="sobreNos.html" data-i18n="footLinkHist">Descubra nossa história</a></li>
+                    <li><a href="sobreNos.html" data-i18n="footLinkPlan">Onde planejamos chegar</a></li>
                 </ul>
             </nav>
 
@@ -314,8 +314,9 @@
         </div>
     </footer>
 
+    <!-- Chamada atualizada para o novo JS autônomo de produtos -->
+    <script src="../js/produtos.js"></script>
     <script src="../js/index.js"></script>
-    <script src="../js/filtros.js"></script>
 
     <script>
         const modal = document.getElementById('productModal');
