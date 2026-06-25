@@ -56,7 +56,7 @@ window.addEventListener('scroll', () => {
 
 
 /**
- * 3. INTERAÇÃO DOS MENUS (Mobile e Tradução)
+ * 3. INTERAÇÃO DOS MENUS
  */
 
 botaoTraducao.addEventListener('click', (event) => {
@@ -85,17 +85,41 @@ document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
     let idiomaAtual = urlParams.get('lang');
 
-    // Se não tiver idioma na URL, coloca PT como padrão
+    if (!idiomaAtual) {
+        idiomaAtual = localStorage.getItem('site_lang');
+    }
+
     if (!idiomaAtual || !traducoes[idiomaAtual]) {
         idiomaAtual = 'pt';
     }
 
-    // Procura elementos com data-i18n e substitui pelo texto traduzido
-    const elementosParaTraduzir = document.querySelectorAll('[data-i18n]');
+    localStorage.setItem('site_lang', idiomaAtual);
+
+    const pathname = window.location.pathname;
+    const precisaVoltarPasta = !pathname.endsWith('index.html') && pathname !== '/';
+    const prefixoPasta = precisaVoltarPasta ? '../' : '';
+
+    let iconeSrc = `${prefixoPasta}img/header/traducao.png';`
     
-    elementosParaTraduzir.forEach(elemento => {
+    if (idiomaAtual === 'pt') {
+        iconeSrc = `${prefixoPasta}img/header/pt-br.png`;
+    } else if (idiomaAtual === 'en') {
+        iconeSrc = `${prefixoPasta}img/header/en.png`;
+    } else if (idiomaAtual === 'es') {
+        iconeSrc = `${prefixoPasta}img/header/es.png`;
+    }
+
+    const iconeTraducao = document.querySelector('.icone-traducao');
+    if (iconeTraducao) {
+        iconeTraducao.src = iconeSrc;
+    }
+
+    // Tradução dos Elementos HTML (data-i18n)
+    const elementosParaTraduciar = document.querySelectorAll('[data-i18n]');
+    
+    elementosParaTraduciar.forEach(elemento => {
         const chave = elemento.getAttribute('data-i18n'); 
-        if (traducoes[idiomaAtual][chave]) {
+        if (traducoes[idiomaAtual] && traducoes[idiomaAtual][chave]) {
             elemento.textContent = traducoes[idiomaAtual][chave];
         }
     });

@@ -136,27 +136,3 @@ const traducoes = {
         footPlanejamos: "Where do we plan to go"
     }
 };
-
-function aplicarTraducoes() {
-    const urlParams = new URLSearchParams(window.location.search);
-    let idiomaAtual = urlParams.get('lang') || 'pt';
-
-    if (!traducoes[idiomaAtual]) {
-        idiomaAtual = 'pt';
-    }
-
-    const elementos = document.querySelectorAll('[data-i18n]');
-
-    elementos.forEach(elemento => {
-        const chave = elemento.getAttribute('data-i18n');
-        if (traducoes[idiomaAtual][chave]) {
-            if (elemento.tagName.toLowerCase() === 'title') {
-                document.title = traducoes[idiomaAtual][chave];
-            } else {
-                elemento.textContent = traducoes[idiomaAtual][chave];
-            }
-        }
-    });
-}
-
-document.addEventListener('DOMContentLoaded', aplicarTraducoes);

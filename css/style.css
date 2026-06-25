@@ -41,7 +41,7 @@ header.header-rolado {
     width: 100%;
     border-radius: 0;  
     padding: 15px 10%;   
-    background-color: rgba(232, 240, 233, 0.7); 
+    background-color: rgba(232, 240, 233, 1); 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);  
 }
 
@@ -83,7 +83,7 @@ header h2 {
 }
 
 .navHeader a {
-    color: #2A2C2B;
+    color: #1e4723;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
